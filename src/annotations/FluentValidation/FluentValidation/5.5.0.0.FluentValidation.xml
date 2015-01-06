@@ -1,0 +1,1066 @@
+<assembly name="FluentValidation">
+  <member name="M:FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="context">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="context">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AbstractValidator`1.AddRule(FluentValidation.IValidationRule)">
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AbstractValidator`1.Custom(System.Func{`0,FluentValidation.Results.ValidationFailure})">
+    <parameter name="customValidator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AbstractValidator`1.Custom(System.Func{`0,FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationFailure})">
+    <parameter name="customValidator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AbstractValidator`1.CustomAsync(System.Func{`0,System.Threading.Tasks.Task{FluentValidation.Results.ValidationFailure}})">
+    <parameter name="customValidator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AbstractValidator`1.CustomAsync(System.Func{`0,FluentValidation.ValidationContext{`0},System.Threading.Tasks.Task{FluentValidation.Results.ValidationFailure}})">
+    <parameter name="customValidator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)">
+    <parameter name="ruleSetName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="action">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)">
+    <parameter name="predicate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="action">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)">
+    <parameter name="predicate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="action">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AssemblyScanner.#ctor(System.Collections.Generic.IEnumerable{System.Type})">
+    <parameter name="types">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AssemblyScanner.FindValidatorsInAssembly(System.Reflection.Assembly)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="assembly">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AssemblyScanner.FindValidatorsInAssemblyContaining``1">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.AssemblyScanner.ForEach(System.Action{FluentValidation.AssemblyScanner.AssemblyScanResult})">
+    <parameter name="action">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.AssemblyScanner.AssemblyScanResult.#ctor(System.Type,System.Type)">
+    <parameter name="interfaceType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="validatorType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.AssemblyScanner.AssemblyScanResult.InterfaceType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.AssemblyScanner.AssemblyScanResult.ValidatorType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Attributes.ValidatorAttribute.ValidatorType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Attributes.ValidatorAttribute.#ctor(System.Type)">
+    <parameter name="validatorType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.Cascade``2(FluentValidation.IRuleBuilderInitial{``0,``1},FluentValidation.CascadeMode)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="ruleBuilder">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.OnAnyFailure``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.Action{``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="onFailure">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithMessage``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="errorMessage">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithMessage``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.String,System.Object[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="errorMessage">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="formatArgs">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithMessage``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.String,System.Func{``0,System.Object}[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="errorMessage">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="funcs">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithMessage``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.String,System.Func{``0,``1,System.Object}[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="errorMessage">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="funcs">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithLocalizedMessage``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.Linq.Expressions.Expression{System.Func{System.String}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="resourceSelector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithLocalizedMessage``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.Linq.Expressions.Expression{System.Func{System.String}},System.Object[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="resourceSelector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="formatArgs">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithLocalizedMessage``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.Linq.Expressions.Expression{System.Func{System.String}},System.Func{``0,System.Object}[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="resourceSelector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="formatArgs">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithLocalizedMessage``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.Linq.Expressions.Expression{System.Func{System.String}},FluentValidation.Resources.IResourceAccessorBuilder)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="resourceSelector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="resourceAccessorBuilder">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.When``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.Func{``0,System.Boolean},FluentValidation.ApplyConditionTo)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="predicate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.Unless``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.Func{``0,System.Boolean},FluentValidation.ApplyConditionTo)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="predicate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithName``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="overridePropertyName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithLocalizedName``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.Linq.Expressions.Expression{System.Func{System.String}},FluentValidation.Resources.IResourceAccessorBuilder)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="resourceSelector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="resourceAccessorBuilder">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.OverridePropertyName``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="propertyName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithPropertyName``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="propertyName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.DefaultValidatorOptions.WithState``2(FluentValidation.IRuleBuilderOptions{``0,``1},System.Func{``0,System.Object})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="stateProvider">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.InlineValidator`1.Add``1(FluentValidation.InlineValidator{`0}.InlineRuleCreator{``0})">
+    <parameter name="ruleCreator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.Extensions.GetMember(System.Linq.Expressions.LambdaExpression)">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.Extensions.GetMember``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.Extensions.SplitPascalCase(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.ContractAnnotationAttribute.#ctor(System.String)" />
+    <argument><![CDATA["input:null=>null; input:notnull=>notnull"]]></argument>
+    <parameter name="input">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.Extensions.CoerceToNonGeneric``2(System.Func{``0,``1})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="func">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.Extensions.CoerceToNonGeneric``1(System.Func{``0,System.Boolean})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="func">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.Extensions.CoerceToNonGeneric``1(System.Action{``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="action">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.IConfigurable`2.Configure(System.Action{`0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="configurator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:JetBrains.Annotations.PathReferenceAttribute.#ctor(System.String)">
+    <parameter name="basePath">
+      <attribute ctor="M:JetBrains.Annotations.PathReferenceAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.MessageFormatter.AppendArgument(System.String,System.Object)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.MessageFormatter.AppendPropertyName(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Internal.MessageFormatter.AppendAdditionalArguments(System.Object[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Internal.MessageFormatter.BuildMessage(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="messageTemplate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Internal.PropertyRule.Member">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Internal.PropertyRule.PropertyFunc">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Internal.PropertyRule.Expression">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Internal.PropertyRule.DisplayName">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Internal.PropertyRule.OnFailure">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Internal.PropertyRule.CurrentValidator">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Internal.PropertyRule.TypeToValidate">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Internal.PropertyRule.#ctor(System.Reflection.MemberInfo,System.Func{System.Object,System.Object},System.Linq.Expressions.LambdaExpression,System.Func{FluentValidation.CascadeMode},System.Type,System.Type)">
+    <parameter name="member">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="propertyFunc">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="cascadeModeThunk">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="typeToValidate">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="containerType">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.PropertyRule.Create``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.PropertyRule.Create``2(System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Func{FluentValidation.CascadeMode})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="cascadeModeThunk">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.PropertyRule.AddValidator(FluentValidation.Validators.IPropertyValidator)">
+    <parameter name="validator">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.PropertyRule.ReplaceValidator(FluentValidation.Validators.IPropertyValidator,FluentValidation.Validators.IPropertyValidator)">
+    <parameter name="original">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="newValidator">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Internal.PropertyRule.RemoveValidator(FluentValidation.Validators.IPropertyValidator)">
+    <parameter name="original">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Internal.PropertyRule.PropertyName">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Internal.PropertyRule.MessageBuilder">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Internal.PropertyRule.GetDisplayName">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Internal.PropertyRule.ApplyCondition(System.Func{System.Object,System.Boolean},FluentValidation.ApplyConditionTo)">
+    <parameter name="predicate">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.IValidationRule.Validators">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.IValidationRule.RuleSet">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.IValidationRule.Validate(FluentValidation.ValidationContext)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="context">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidationRule.ValidateAsync(FluentValidation.ValidationContext)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="context">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidationRule.ApplyCondition(System.Func{System.Object,System.Boolean},FluentValidation.ApplyConditionTo)">
+    <parameter name="predicate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidator`1.Validate(`0)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="instance">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidator`1.ValidateAsync(`0)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="instance">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidator.Validate(System.Object)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="instance">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidator.ValidateAsync(System.Object)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="instance">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidator.Validate(FluentValidation.ValidationContext)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="context">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidator.ValidateAsync(FluentValidation.ValidationContext)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="context">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidator.CreateDescriptor">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.IValidator.CanValidateInstancesOfType(System.Type)">
+    <parameter name="type">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidatorDescriptor.GetName(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="property">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidatorDescriptor.GetMembersWithValidators">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.IValidatorDescriptor.GetValidatorsForMember(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidatorDescriptor.GetRulesForMember(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IValidatorFactory.GetValidator``1">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.IValidatorFactory.GetValidator(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="type">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.MemberAccessor`1.From``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="getExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.MemberAccessor`2.#ctor(System.Linq.Expressions.Expression{System.Func{`0,`1}})">
+    <parameter name="getExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.MemberAccessor`2.Member">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.MemberAccessor`2.Get(`0)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="target">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.MemberAccessor`2.Set(`0,`1)">
+    <parameter name="target">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.MemberAccessor`2.Equals(System.Object)">
+    <parameter name="obj">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.PropertyRuleValidatorExtensions.ReplaceRule``1(FluentValidation.IValidator{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},FluentValidation.Validators.IPropertyValidator)">
+    <parameter name="validators">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="newValidator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.PropertyRuleValidatorExtensions.RemoveRule``1(FluentValidation.IValidator{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Type)">
+    <parameter name="validators">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="oldValidatorType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.PropertyRuleValidatorExtensions.ClearRules``1(FluentValidation.IValidator{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">
+    <parameter name="validators">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Results.ValidationFailure.#ctor(System.String,System.String)">
+    <parameter name="propertyName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="error">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Results.ValidationFailure.#ctor(System.String,System.String,System.Object)">
+    <parameter name="propertyName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="error">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="attemptedValue">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Results.ValidationFailure.PropertyName">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Results.ValidationFailure.ErrorMessage">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Results.ValidationFailure.AttemptedValue">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Results.ValidationFailure.CustomState">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Results.ValidationResult.Errors">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Results.ValidationResult.#ctor(System.Collections.Generic.IEnumerable{FluentValidation.Results.ValidationFailure})">
+    <parameter name="failures">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IRuleBuilder`2.SetValidator(FluentValidation.Validators.IPropertyValidator)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="validator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.IRuleBuilder`2.SetValidator(FluentValidation.IValidator{`1})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="validator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.ValidationContext`1.#ctor(`0)">
+    <parameter name="instanceToValidate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.ValidationContext`1.#ctor(`0,FluentValidation.Internal.PropertyChain,FluentValidation.Internal.IValidatorSelector)">
+    <parameter name="instanceToValidate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="propertyChain">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="validatorSelector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.ValidationContext`1.InstanceToValidate">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.ValidationContext.#ctor(System.Object)">
+    <parameter name="instanceToValidate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.ValidationContext.#ctor(System.Object,FluentValidation.Internal.PropertyChain,FluentValidation.Internal.IValidatorSelector)">
+    <parameter name="instanceToValidate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="propertyChain">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="validatorSelector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.ValidationContext.PropertyChain">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.ValidationContext.InstanceToValidate">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.ValidationContext.Selector">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.ValidationContext.Clone(FluentValidation.Internal.PropertyChain,System.Object,FluentValidation.Internal.IValidatorSelector)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="chain">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="instanceToValidate">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="selector">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.ValidatorDescriptor`1.#ctor(System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule})">
+    <parameter name="ruleBuilders">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.ValidatorDescriptor`1.GetName(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.ValidatorDescriptor`1.GetValidatorsForMember``1(FluentValidation.MemberAccessor{`0,``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="accessor">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.ValidatorFactoryBase.CreateInstance(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="validatorType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.ValidatorOptions.PropertyNameResolver">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.ValidatorOptions.DisplayNameResolver">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Validators.AbstractComparisonValidator.IsValid(System.IComparable,System.IComparable)">
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="valueToCompare">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Validators.IComparisonValidator.MemberToCompare">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Validators.IComparisonValidator.ValueToCompare">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Validators.AsyncPredicateValidator.#ctor(System.Func{System.Object,System.Object,FluentValidation.Validators.PropertyValidatorContext,System.Threading.Tasks.Task{System.Boolean}})">
+    <parameter name="predicate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Validators.ChildCollectionValidatorAdaptor.ChildValidatorType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Validators.ChildCollectionValidatorAdaptor.Predicate">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Validators.ChildCollectionValidatorAdaptor.#ctor(FluentValidation.IValidator)">
+    <parameter name="childValidator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.ChildCollectionValidatorAdaptor.#ctor(System.Func{System.Object,FluentValidation.IValidator},System.Type)">
+    <parameter name="childValidatorProvider">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="childValidatorType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Validators.ChildValidatorAdaptor.Validator">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Validators.ChildValidatorAdaptor.#ctor(FluentValidation.IValidator)">
+    <parameter name="validator">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Validators.DelegatingValidator.InnerValidator">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Validators.DelegatingValidator.#ctor(System.Func{System.Object,System.Boolean},FluentValidation.Validators.IPropertyValidator)">
+    <parameter name="condition">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="innerValidator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Validators.IDelegatingValidator.InnerValidator">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Validators.IDelegatingValidator.CheckCondition(System.Object)">
+    <parameter name="instance">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.EqualValidator.#ctor(System.Object)">
+    <parameter name="valueToCompare">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.EqualValidator.#ctor(System.Object,System.Collections.IEqualityComparer)">
+    <parameter name="valueToCompare">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="comparer">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.EqualValidator.#ctor(System.Func{System.Object,System.Object},System.Reflection.MemberInfo)">
+    <parameter name="comparisonProperty">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="member">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.EqualValidator.#ctor(System.Func{System.Object,System.Object},System.Reflection.MemberInfo,System.Collections.IEqualityComparer)">
+    <parameter name="comparisonProperty">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="member">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="comparer">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.ExclusiveBetweenValidator.#ctor(System.IComparable,System.IComparable)">
+    <parameter name="from">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="to">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.GreaterThanOrEqualValidator.#ctor(System.IComparable)">
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.GreaterThanOrEqualValidator.#ctor(System.Func{System.Object,System.Object},System.Reflection.MemberInfo)">
+    <parameter name="valueToCompareFunc">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="member">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.GreaterThanValidator.#ctor(System.IComparable)">
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.GreaterThanValidator.#ctor(System.Func{System.Object,System.Object},System.Reflection.MemberInfo)">
+    <parameter name="valueToCompareFunc">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="member">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.InclusiveBetweenValidator.#ctor(System.IComparable,System.IComparable)">
+    <parameter name="from">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="to">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Validators.IBetweenValidator.From">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Validators.IBetweenValidator.To">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Validators.IPropertyValidator.Validate(FluentValidation.Validators.PropertyValidatorContext)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="context">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.IPropertyValidator.ValidateAsync(FluentValidation.Validators.PropertyValidatorContext)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="context">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Validators.IPropertyValidator.CustomMessageFormatArguments">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Validators.IPropertyValidator.CustomStateProvider">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Validators.IPropertyValidator.ErrorMessageSource">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Validators.LengthValidator.#ctor(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{System.String}})">
+    <parameter name="errorMessageResourceSelector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.MaximumLengthValidator.#ctor(System.Int32,System.Linq.Expressions.Expression{System.Func{System.String}})">
+    <parameter name="errorMessageResourceSelector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.MinimumLengthValidator.#ctor(System.Int32,System.Linq.Expressions.Expression{System.Func{System.String}})">
+    <parameter name="errorMessageResourceSelector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.LessThanOrEqualValidator.#ctor(System.IComparable)">
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.LessThanOrEqualValidator.#ctor(System.Func{System.Object,System.Object},System.Reflection.MemberInfo)">
+    <parameter name="valueToCompareFunc">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="member">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.LessThanValidator.#ctor(System.IComparable)">
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.LessThanValidator.#ctor(System.Func{System.Object,System.Object},System.Reflection.MemberInfo)">
+    <parameter name="valueToCompareFunc">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="member">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.NotEmptyValidator.#ctor(System.Object)">
+    <parameter name="defaultValueForType">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.NotEqualValidator.#ctor(System.Func{System.Object,System.Object},System.Reflection.MemberInfo)">
+    <parameter name="func">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="memberToCompare">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.NotEqualValidator.#ctor(System.Func{System.Object,System.Object},System.Reflection.MemberInfo,System.Collections.IEqualityComparer)">
+    <parameter name="func">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="equalityComparer">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.NotEqualValidator.#ctor(System.Object)">
+    <parameter name="comparisonValue">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.NotEqualValidator.#ctor(System.Object,System.Collections.IEqualityComparer)">
+    <parameter name="comparisonValue">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="equalityComparer">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.PredicateValidator.#ctor(FluentValidation.Validators.PredicateValidator.Predicate)">
+    <parameter name="predicate">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.PropertyValidator.Validate(FluentValidation.Validators.PropertyValidatorContext)">
+    <parameter name="context">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.PropertyValidator.ValidateAsync(FluentValidation.Validators.PropertyValidatorContext)">
+    <parameter name="context">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Validators.PropertyValidatorContext.ParentContext">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Validators.PropertyValidatorContext.Rule">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Validators.PropertyValidatorContext.PropertyName">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Validators.PropertyValidatorContext.PropertyDescription">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Validators.PropertyValidatorContext.Instance">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Validators.PropertyValidatorContext.MessageFormatter">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:FluentValidation.Validators.PropertyValidatorContext.PropertyValue">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Validators.PropertyValidatorContext.#ctor(FluentValidation.ValidationContext,FluentValidation.Internal.PropertyRule,System.String)">
+    <parameter name="parentContext">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="rule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="propertyName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.RegularExpressionValidator.#ctor(System.String)">
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.RegularExpressionValidator.#ctor(System.Text.RegularExpressions.Regex)">
+    <parameter name="regex">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.RegularExpressionValidator.#ctor(System.String,System.Text.RegularExpressions.RegexOptions)">
+    <parameter name="expression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:FluentValidation.Validators.IRegularExpressionValidator.Expression">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:FluentValidation.Validators.ScalePrecisionValidator.#ctor(System.Int32,System.Int32,System.String,System.Type)">
+    <parameter name="errorMessageResourceName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="errorMessageResourceType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.ScalePrecisionValidator.#ctor(System.Int32,System.Int32,System.String)">
+    <parameter name="errorMessage">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:FluentValidation.Validators.ScalePrecisionValidator.#ctor(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{System.String}})">
+    <parameter name="errorMessageResourceSelector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+</assembly>
