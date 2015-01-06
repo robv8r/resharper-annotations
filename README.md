@@ -11,6 +11,7 @@ The Community ReSharper External Annotations Project is an open source project f
 3. Find the "Community ReSharper External Annotations" package in the list.
 4. Click the "Install" button to the right of the package.
 5. Click "Install" at the bottom of the Extenstion Manager window.
+6. **Restart Visual Studio!**
 
 ##Code Annotations
 
@@ -27,4 +28,18 @@ JetBrains introduced [External Annotations](https://www.jetbrains.com/resharper/
 ##Goal
 The goal of this project is to augment the official ReSharper.ExternalAnnotations package with additional External Annotations that are either missing from or outside the scope of the official package. 
 
+##Annotated Third-Party APIs
+
+* FluentValidation 5.5.0.0
+* Ninject 3.2.0.0 (includes 3.2.2.0)
+
+##Annotated .Net Framework Classes
+
+The following classes are either partially implemented or missing from the official ReSharper External Annotations package.
+
+* mscorlib
+	* Version 4.0.0.0
+		* System.Threading.Tasks.Task
+		* System.Threading.Tasks.Task<T>
+		* System.Threading.Tasks.TaskCompletionSource
 
