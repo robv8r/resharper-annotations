@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Rebuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+  <PropertyGroup>
+    <OutputDirectory>bin</OutputDirectory>
+    <Version>1.0.0.0</Version>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <NuSpecFiles Include="src\*.nuspec" />
+  </ItemGroup>
+  
+  <Target Name="Clean">
+    <ItemGroup>
+      <_FilesToDelete Include="$(OutputDirectory)\**\*.*"/>
+    </ItemGroup>
+    <Delete Files="@(_FilesToDelete)" />
+    <ItemGroup>
+      <_FoldersContainingFoldersToDelete Include="$([System.IO.Directory]::GetDirectories(&quot;$(MSBuildProjectDirectory)&quot;, '$(OutputDirectory)', System.IO.SearchOption.AllDirectories))" />
+      <_FoldersToDelete Include="$([System.IO.Directory]::GetDirectories(&quot;%(_FoldersContainingFoldersToDelete.FullPath)&quot;, '*'))" Condition=" '@(_FoldersContainingFoldersToDelete)' != '' " />
+    </ItemGroup>
+    <Message Importance="high" Text="@(_FoldersContainingFoldersToDelete)" />
+    <RemoveDir Directories="@(_FoldersToDelete)" />
+  </Target>
+  
+  <Target Name="Build">
+    <MakeDir Directories="$(OutputDirectory)"/>
+    <DownloadFile Condition="!EXISTS('$(OutputDirectory)\NuGet.exe')" Address="http://build.nuget.org/NuGet.exe" FileName="$(OutputDirectory)\NuGet.exe" />    
+    <Exec
+      Command="&quot;$(OutputDirectory)\NuGet.exe&quot; pack -Properties &quot;version=$(Version)&quot; -OutputDirectory &quot;$(OutputDirectory)&quot; &quot;%(NuSpecFiles.FullPath)&quot;" />
+    <Delete Files="$(OutputDirectory)\NuGet.exe" />
+  </Target>
+  
+  <Target Name="Rebuild" DependsOnTargets="Clean;Build" />
+  
+  <UsingTask TaskName="DownloadFile" TaskFactory="CodeTaskFactory" 
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll" >
+    <ParameterGroup>
+      <Address ParameterType="System.String" Required="true"/>
+      <FileName ParameterType="System.String" Required="true" />
+    </ParameterGroup>
+    <Task>
+      <Reference Include="System" />
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+            new System.Net.WebClient().DownloadFile(Address, FileName);
+        ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+</Project>
