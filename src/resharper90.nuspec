@@ -10,7 +10,7 @@
         <projectUrl>https://github.com/robv8r/resharper-annotations</projectUrl>
         <iconUrl>https://github.com/robv8r/resharper-annotations/raw/master/logo-24.png</iconUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <description>Community External Annotations</description>
+        <description>Community External Annotations.  **Restart Visual Studio after Installing or Uninstalling.</description>
         <!--<releaseNotes>Initial Version.</releaseNotes>-->
         <copyright>Copyright Rob Winningham 2014</copyright>
         <language>en-US</language>
