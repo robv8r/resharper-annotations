@@ -1,4 +1,4 @@
-<assembly name="Ninject">
+<assembly name="Ninject, Version=3.2.0.0">
   <member name="P:Ninject.Activation.Blocks.ActivationBlock.Parent">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>

@@ -1,4 +1,4 @@
-<assembly name="FluentValidation">
+<assembly name="FluentValidation, Version=5.5.0.0">
   <member name="M:FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="context">
