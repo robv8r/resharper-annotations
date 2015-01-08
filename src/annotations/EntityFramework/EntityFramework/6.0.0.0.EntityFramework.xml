@@ -3812,4 +3812,53 @@
       <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
   </member>
+  <member name="M:System.Data.Entity.Validation.DbEntityValidationException.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Data.Entity.Validation.DbEntityValidationResult})">
+    <parameter name="entityValidationResults">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.Validation.DbEntityValidationException.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Data.Entity.Validation.DbEntityValidationResult},System.Exception)">
+    <parameter name="entityValidationResults">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:System.Data.Entity.Validation.DbEntityValidationException.EntityValidationErrors">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.Validation.DbEntityValidationResult.#ctor(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IEnumerable{System.Data.Entity.Validation.DbValidationError})">
+    <parameter name="entry">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="validationErrors">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.Validation.DbEntityValidationResult.#ctor(System.Data.Entity.Internal.InternalEntityEntry,System.Collections.Generic.IEnumerable{System.Data.Entity.Validation.DbValidationError})">
+    <parameter name="entry">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="validationErrors">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:System.Data.Entity.Validation.DbEntityValidationResult.Entry">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Validation.DbEntityValidationResult.ValidationErrors">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.Validation.DbValidationError.#ctor(System.String,System.String)">
+    <parameter name="propertyName">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="errorMessage">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:System.Data.Entity.Validation.DbValidationError.PropertyName">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Validation.DbValidationError.ErrorMessage">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
 </assembly>
