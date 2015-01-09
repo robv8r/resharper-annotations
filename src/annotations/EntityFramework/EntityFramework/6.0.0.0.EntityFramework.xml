@@ -1455,17 +1455,7 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:System.Data.Entity.DropCreateDatabaseAlways`1.InitializeDatabase(`0)">
-    <parameter name="context">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
   <member name="M:System.Data.Entity.DropCreateDatabaseAlways`1.Seed(`0)">
-    <parameter name="context">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:System.Data.Entity.DropCreateDatabaseIfModelChanges`1.InitializeDatabase(`0)">
     <parameter name="context">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -2422,11 +2412,6 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:System.Data.Entity.MigrateDatabaseToLatestVersion`2.InitializeDatabase(`0)">
-    <parameter name="context">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
   <member name="M:System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Types.EntityTypeConfiguration)">
     <parameter name="entityTypeConfiguration">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -2513,11 +2498,6 @@
       <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
     <parameter name="tableName">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:System.Data.Entity.NullDatabaseInitializer`1.InitializeDatabase(`0)">
-    <parameter name="context">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
