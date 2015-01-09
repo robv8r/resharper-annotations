@@ -5959,6 +5959,75 @@
   <member name="P:JetBrains.Annotations.ValueProviderAttribute.Name">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbAggregate.Arguments">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbAggregate.ResultType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbApplyExpression.Apply">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbApplyExpression.Input">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbArithmeticExpression.Arguments">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbBinaryExpression.Left">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbBinaryExpression.Right">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbExpression.ResultType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbExpressionBinding.Expression">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbExpressionBinding.Variable">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbGroupExpressionBinding.Expression">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbGroupExpressionBinding.GroupAggregate">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbGroupExpressionBinding.GroupVariable">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbGroupExpressionBinding.GroupVariableName">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbGroupExpressionBinding.GroupVariableType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbGroupExpressionBinding.Variable">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbGroupExpressionBinding.VariableName">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbGroupExpressionBinding.VariableType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbSetClause.Property">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbSetClause.Value">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbSortClause.Collation">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbSortClause.Expression">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbUnaryExpression.Argument">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
   <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbUpdateCommandTree.Predicate">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
@@ -5968,10 +6037,28 @@
   <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbUpdateCommandTree.SetClauses">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.DbVariableReferenceExpression.VariableName">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.False">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.True">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
   <member name="P:System.Data.Entity.Core.Common.Internal.Materialization.Translator.TranslatorVisitor.ColumnTypes">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="P:System.Data.Entity.Core.Common.Internal.Materialization.Translator.TranslatorVisitor.NullableColumns">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Metadata.Edm.TypeUsage.EdmType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Metadata.Edm.TypeUsage.Facets">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.Core.Metadata.Edm.TypeUsage.ModelTypeUsage">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="P:System.Data.Entity.Database.CommandTimeout">
