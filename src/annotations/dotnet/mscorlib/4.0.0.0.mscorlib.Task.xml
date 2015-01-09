@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <assembly name="mscorlib, Version=4.0.0.0">
-  <member name="P:System.Threading.Tasks.Task.Factory">
+  <member name="M:System.Threading.Tasks.Task.Delay(System.Int32)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Threading.Tasks.Task.Delay(System.Int32,System.Threading.CancellationToken)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Threading.Tasks.Task.Delay(System.TimeSpan)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Threading.Tasks.Task.Delay(System.TimeSpan,System.Threading.CancellationToken)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:System.Threading.Tasks.Task.FromResult``1(``0)">
@@ -21,18 +30,6 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:System.Threading.Tasks.Task.Run``1(System.Func{``0})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="function">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:System.Threading.Tasks.Task.Run``1(System.Func{``0},System.Threading.CancellationToken)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="function">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
   <member name="M:System.Threading.Tasks.Task.Run(System.Func{System.Threading.Tasks.Task})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="function">
@@ -40,6 +37,18 @@
     </parameter>
   </member>
   <member name="M:System.Threading.Tasks.Task.Run(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="function">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Threading.Tasks.Task.Run``1(System.Func{``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="function">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Threading.Tasks.Task.Run``1(System.Func{``0},System.Threading.CancellationToken)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="function">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -56,18 +65,6 @@
     <parameter name="function">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="M:System.Threading.Tasks.Task.Delay(System.TimeSpan)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:System.Threading.Tasks.Task.Delay(System.TimeSpan,System.Threading.CancellationToken)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:System.Threading.Tasks.Task.Delay(System.Int32)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:System.Threading.Tasks.Task.Delay(System.Int32,System.Threading.CancellationToken)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:System.Threading.Tasks.Task.WhenAll(System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -93,13 +90,19 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
+  <member name="M:System.Threading.Tasks.Task.WhenAny(System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="tasks">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
   <member name="M:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="tasks">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:System.Threading.Tasks.Task.WhenAny(System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task})">
+  <member name="M:System.Threading.Tasks.Task.WhenAny``1(System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task{``0}})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="tasks">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -111,10 +114,7 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:System.Threading.Tasks.Task.WhenAny``1(System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task{``0}})">
+  <member name="P:System.Threading.Tasks.Task.Factory">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="tasks">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
 </assembly>

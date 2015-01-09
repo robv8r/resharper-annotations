@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <assembly name="mscorlib, Version=4.0.0.0">
-  <member name="P:System.Threading.Tasks.Task`1.Result">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
   <member name="P:System.Threading.Tasks.Task`1.Factory">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Threading.Tasks.Task`1.Result">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
   </member>
 </assembly>

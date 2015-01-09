@@ -8,6 +8,7 @@
   
   <ItemGroup>
     <NuSpecFiles Include="src\*.nuspec" />
+    <XmlAnnotationFiles Include="src\annotations\**\*.xml" />
   </ItemGroup>
   
   <Target Name="Clean">
@@ -32,6 +33,15 @@
   </Target>
   
   <Target Name="Rebuild" DependsOnTargets="Clean;Build" />
+  
+  <Target Name="SortXmlSources" Outputs="%(XmlAnnotationFiles.Identity)">
+    <XslTransformation
+      OutputPaths="%(XmlAnnotationFiles.RelativeDir)sorted.%(XmlAnnotationFiles.FileName).xml"
+      XmlInputPaths="%(XmlAnnotationFiles.Identity)"
+      XslInputPath="src\xslt\sort.xslt" />
+    <!--<Move SourceFiles="%(XmlAnnotationFiles.Identity)" DestinationFiles="%(XmlAnnotationFiles.RelativeDir)old.%(XmlAnnotationFiles.FileName).xml" />-->
+    <Move SourceFiles="%(XmlAnnotationFiles.RelativeDir)sorted.%(XmlAnnotationFiles.FileName).xml" DestinationFiles="%(XmlAnnotationFiles.Identity)" />
+  </Target>
   
   <UsingTask TaskName="DownloadFile" TaskFactory="CodeTaskFactory" 
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll" >

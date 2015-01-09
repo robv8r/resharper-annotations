@@ -1,6 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <assembly name="Ninject, Version=3.2.0.0">
-  <member name="P:Ninject.Activation.Blocks.ActivationBlock.Parent">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  <member name="M:JetBrains.Annotations.AspRequiredAttributeAttribute.#ctor(System.String)">
+    <parameter name="attribute">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:JetBrains.Annotations.BaseTypeRequiredAttribute.#ctor(System.Type)">
+    <parameter name="baseType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:JetBrains.Annotations.ContractAnnotationAttribute.#ctor(System.String)">
+    <parameter name="contract">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:JetBrains.Annotations.ContractAnnotationAttribute.#ctor(System.String,System.Boolean)">
+    <parameter name="contract">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:JetBrains.Annotations.HtmlAttributeValueAttribute.#ctor(System.String)">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:JetBrains.Annotations.PathReferenceAttribute.#ctor(System.String)">
+    <parameter name="basePath">
+      <attribute ctor="M:JetBrains.Annotations.PathReferenceAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:JetBrains.Annotations.PublicAPIAttribute.#ctor(System.String)">
+    <parameter name="comment">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:JetBrains.Annotations.ValueProviderAttribute.#ctor(System.String)">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.Activation.Blocks.ActivationBlock.#ctor(Ninject.Syntax.IResolutionRoot)">
     <parameter name="parent">
@@ -13,15 +51,12 @@
     </parameter>
   </member>
   <member name="M:Ninject.Activation.Caching.Cache.#ctor(Ninject.Activation.IPipeline,Ninject.Activation.Caching.ICachePruner)">
-    <parameter name="pipeline">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="cachePruner">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Activation.Caching.Cache.Pipeline">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="pipeline">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.Activation.Caching.IActivationCache.AddActivatedInstance(System.Object)">
     <parameter name="instance">
@@ -43,6 +78,16 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
+  <member name="M:Ninject.Activation.Caching.ICache.Clear(System.Object)">
+    <parameter name="scope">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Activation.Caching.ICache.Release(System.Object)">
+    <parameter name="instance">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
   <member name="M:Ninject.Activation.Caching.ICache.Remember(Ninject.Activation.IContext,Ninject.Activation.InstanceReference)">
     <parameter name="context">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -54,16 +99,6 @@
   <member name="M:Ninject.Activation.Caching.ICache.TryGet(Ninject.Activation.IContext)">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     <parameter name="context">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Activation.Caching.ICache.Release(System.Object)">
-    <parameter name="instance">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Activation.Caching.ICache.Clear(System.Object)">
-    <parameter name="scope">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -82,52 +117,25 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Activation.Context.Cache">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.Context.Planner">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.Context.Pipeline">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Activation.Context.#ctor(Ninject.IKernel,Ninject.Activation.IRequest,Ninject.Planning.Bindings.IBinding,Ninject.Activation.Caching.ICache,Ninject.Planning.IPlanner,Ninject.Activation.IPipeline)">
-    <parameter name="kernel">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="request">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="binding">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
     <parameter name="cache">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="planner">
+    <parameter name="kernel">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
     <parameter name="pipeline">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Activation.IContext.Kernel">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.IContext.Request">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.IContext.Binding">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.IContext.Plan">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.IContext.Parameters">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.IContext.GenericArguments">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="planner">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="request">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.Activation.IContext.GetProvider">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -138,16 +146,10 @@
   <member name="M:Ninject.Activation.IContext.Resolve">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
   </member>
-  <member name="P:Ninject.Activation.InstanceReference.Instance">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Activation.InstanceReference.IfInstanceIs``1(System.Action{``0})">
     <parameter name="action">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Activation.IPipeline.Strategies">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Activation.IPipeline.Activate(Ninject.Activation.IContext,Ninject.Activation.InstanceReference)">
     <parameter name="context">
@@ -165,58 +167,34 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Activation.IProvider.Type">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Activation.IProvider.Create(Ninject.Activation.IContext)">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     <parameter name="context">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Activation.IRequest.Service">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.IRequest.ParentRequest">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.IRequest.ParentContext">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.IRequest.Target">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.IRequest.Constraint">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.IRequest.Parameters">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.IRequest.ActiveBindings">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Activation.IRequest.Matches(Ninject.Planning.Bindings.IBinding)">
-    <parameter name="binding">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
   <member name="M:Ninject.Activation.IRequest.CreateChild(System.Type,Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="service">
+    <parameter name="parentContext">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="parentContext">
+    <parameter name="service">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
     <parameter name="target">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Activation.Pipeline.#ctor(System.Collections.Generic.IEnumerable{Ninject.Activation.Strategies.IActivationStrategy},Ninject.Activation.Caching.IActivationCache)">
-    <parameter name="strategies">
+  <member name="M:Ninject.Activation.IRequest.Matches(Ninject.Planning.Bindings.IBinding)">
+    <parameter name="binding">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
+  </member>
+  <member name="M:Ninject.Activation.Pipeline.#ctor(System.Collections.Generic.IEnumerable{Ninject.Activation.Strategies.IActivationStrategy},Ninject.Activation.Caching.IActivationCache)">
     <parameter name="activationCache">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="strategies">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -226,36 +204,45 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Activation.Providers.CallbackProvider`1.Method">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Activation.Providers.CallbackProvider`1.#ctor(System.Func{Ninject.Activation.IContext,`0})">
     <parameter name="method">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Activation.Providers.ConstantProvider`1.Value">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Activation.Providers.ConstantProvider`1.#ctor(`0)">
     <parameter name="value">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Activation.Providers.StandardProvider.Planner">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Activation.Providers.StandardProvider.ConstructorScorer">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Activation.Providers.StandardProvider.#ctor(System.Type,Ninject.Planning.IPlanner,Ninject.Selection.Heuristics.IConstructorScorer)">
-    <parameter name="type">
+    <parameter name="constructorScorer">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
     <parameter name="planner">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="constructorScorer">
+    <parameter name="type">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Activation.Providers.StandardProvider.GetCreationCallback(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="prototype">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Activation.Providers.StandardProvider.GetCreationCallback(System.Type,System.Reflection.ConstructorInfo)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="constructor">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="prototype">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Activation.Providers.StandardProvider.GetImplementationType(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="service">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -268,34 +255,21 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Activation.Providers.StandardProvider.GetImplementationType(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  <member name="M:Ninject.Activation.Request.#ctor(Ninject.Activation.IContext,System.Type,Ninject.Planning.Targets.ITarget,System.Func{System.Object})">
+    <parameter name="parentContext">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="scopeCallback">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
     <parameter name="service">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="M:Ninject.Activation.Providers.StandardProvider.GetCreationCallback(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="prototype">
+    <parameter name="target">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="M:Ninject.Activation.Providers.StandardProvider.GetCreationCallback(System.Type,System.Reflection.ConstructorInfo)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="prototype">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="constructor">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="P:Ninject.Activation.Request.ScopeCallback">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Activation.Request.#ctor(System.Type,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},System.Collections.Generic.IEnumerable{Ninject.Parameters.IParameter},System.Func{System.Object},System.Boolean,System.Boolean)">
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="constraint">
       <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
@@ -305,19 +279,8 @@
     <parameter name="scopeCallback">
       <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="M:Ninject.Activation.Request.#ctor(Ninject.Activation.IContext,System.Type,Ninject.Planning.Targets.ITarget,System.Func{System.Object})">
-    <parameter name="parentContext">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="service">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="target">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="scopeCallback">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:Ninject.Activation.Strategies.ActivationCacheStrategy.#ctor(Ninject.Activation.Caching.IActivationCache)">
@@ -346,23 +309,8 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.ConstraintAttribute.Matches(Ninject.Planning.Bindings.IBindingMetadata)">
-    <parameter name="metadata">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="P:Ninject.NamedAttribute.Name">
+  <member name="M:Ninject.Components.IComponentContainer.Get(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.NamedAttribute.#ctor(System.String)">
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="P:Ninject.Components.IComponentContainer.Kernel">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Components.IComponentContainer.RemoveAll(System.Type)">
     <parameter name="component">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -370,54 +318,38 @@
   <member name="M:Ninject.Components.IComponentContainer.Get``1">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
-  <member name="M:Ninject.Components.IComponentContainer.GetAll``1">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Components.IComponentContainer.Get(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="component">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
   <member name="M:Ninject.Components.IComponentContainer.GetAll(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="component">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Components.INinjectComponent.Settings">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.IKernel.Settings">
+  <member name="M:Ninject.Components.IComponentContainer.GetAll``1">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
-  <member name="P:Ninject.IKernel.Components">
+  <member name="M:Ninject.Components.IComponentContainer.RemoveAll(System.Type)">
+    <parameter name="component">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ConstraintAttribute.Matches(Ninject.Planning.Bindings.IBindingMetadata)">
+    <parameter name="metadata">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.IKernel.BeginBlock">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.IKernel.GetBindings(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.IKernel.GetModules">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.IKernel.HasModule(System.String)">
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.IKernel.Load(System.Collections.Generic.IEnumerable{Ninject.Modules.INinjectModule})">
-    <parameter name="m">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.IKernel.Load(System.Collections.Generic.IEnumerable{System.String})">
-    <parameter name="filePatterns">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.IKernel.Load(System.Collections.Generic.IEnumerable{System.Reflection.Assembly})">
-    <parameter name="assemblies">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.IKernel.Unload(System.String)">
     <parameter name="name">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -430,14 +362,25 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.IKernel.GetBindings(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="service">
+  <member name="M:Ninject.IKernel.Load(System.Collections.Generic.IEnumerable{Ninject.Modules.INinjectModule})">
+    <parameter name="m">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.IKernel.BeginBlock">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  <member name="M:Ninject.IKernel.Load(System.Collections.Generic.IEnumerable{System.Reflection.Assembly})">
+    <parameter name="assemblies">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.IKernel.Load(System.Collections.Generic.IEnumerable{System.String})">
+    <parameter name="filePatterns">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.IKernel.Unload(System.String)">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.Infrastructure.BaseWeakReference.#ctor(System.Object)">
     <parameter name="target">
@@ -449,61 +392,40 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Infrastructure.BaseWeakReference.Target">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Infrastructure.Future`1.Value">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Infrastructure.Future`1.Callback">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Infrastructure.Future`1.#ctor(System.Func{`0})">
     <parameter name="callback">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Infrastructure.IHaveBindingConfiguration.BindingConfiguration">
+  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.ConstructorsAmbiguous(Ninject.Activation.IContext,System.Linq.IGrouping{System.Int32,Ninject.Planning.Directives.ConstructorInjectionDirective})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Infrastructure.IHaveKernel.Kernel">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.ModulesWithNullOrEmptyNamesAreNotSupported">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.TargetDoesNotHaveADefaultValue(Ninject.Planning.Targets.ITarget)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="target">
+    <parameter name="bestDirectives">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.ModuleWithSameNameIsAlreadyLoaded(Ninject.Modules.INinjectModule,Ninject.Modules.INinjectModule)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="newModule">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="existingModule">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.NoModuleLoadedWithTheSpecifiedName(System.String)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.CouldNotUniquelyResolveBinding(Ninject.Activation.IRequest,System.String[])">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="request">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="formattedMatchingBindings">
+    <parameter name="context">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.CouldNotResolveBinding(Ninject.Activation.IRequest)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="request">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.CouldNotResolvePropertyForValueInjection(Ninject.Activation.IRequest,System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="request">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.CouldNotUniquelyResolveBinding(Ninject.Activation.IRequest,System.String[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="formattedMatchingBindings">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
     <parameter name="request">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -516,13 +438,25 @@
   </member>
   <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.InvalidAttributeTypeUsedInBindingCondition(System.String,System.String,System.Type)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="serviceNames">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="methodName">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
+    <parameter name="serviceNames">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
     <parameter name="type">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.ModulesWithNullOrEmptyNamesAreNotSupported">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.ModuleWithSameNameIsAlreadyLoaded(Ninject.Modules.INinjectModule,Ninject.Modules.INinjectModule)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="existingModule">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="newModule">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -541,18 +475,15 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.NoSuchComponentRegistered(System.Type)">
+  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.NoModuleLoadedWithTheSpecifiedName(System.String)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="component">
+    <parameter name="name">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.CouldNotResolvePropertyForValueInjection(Ninject.Activation.IRequest,System.String)">
+  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.NoSuchComponentRegistered(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="request">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="propertyName">
+    <parameter name="component">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -562,16 +493,13 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.ConstructorsAmbiguous(Ninject.Activation.IContext,System.Linq.IGrouping{System.Int32,Ninject.Planning.Directives.ConstructorInjectionDirective})">
+  <member name="M:Ninject.Infrastructure.Introspection.ExceptionFormatter.TargetDoesNotHaveADefaultValue(Ninject.Planning.Targets.ITarget)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="context">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="bestDirectives">
+    <parameter name="target">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Infrastructure.Introspection.FormatExtensions.FormatActivationPath(Ninject.Activation.IRequest)">
+  <member name="M:Ninject.Infrastructure.Introspection.FormatExtensions.Format(Ninject.Activation.IRequest)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="request">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -583,12 +511,6 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
     <parameter name="context">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Infrastructure.Introspection.FormatExtensions.Format(Ninject.Activation.IRequest)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="request">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -604,66 +526,17 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:JetBrains.Annotations.ValueProviderAttribute.#ctor(System.String)">
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="P:JetBrains.Annotations.ValueProviderAttribute.Name">
+  <member name="M:Ninject.Infrastructure.Introspection.FormatExtensions.FormatActivationPath(Ninject.Activation.IRequest)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:JetBrains.Annotations.ContractAnnotationAttribute.#ctor(System.String)">
-    <parameter name="contract">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:JetBrains.Annotations.ContractAnnotationAttribute.#ctor(System.String,System.Boolean)">
-    <parameter name="contract">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:JetBrains.Annotations.BaseTypeRequiredAttribute.#ctor(System.Type)">
-    <parameter name="baseType">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="P:JetBrains.Annotations.BaseTypeRequiredAttribute.BaseType">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:JetBrains.Annotations.MeansImplicitUseAttribute.UseKindFlags">
-    <attribute ctor="M:JetBrains.Annotations.UsedImplicitlyAttribute.#ctor" />
-  </member>
-  <member name="P:JetBrains.Annotations.MeansImplicitUseAttribute.TargetFlags">
-    <attribute ctor="M:JetBrains.Annotations.UsedImplicitlyAttribute.#ctor" />
-  </member>
-  <member name="M:JetBrains.Annotations.PublicAPIAttribute.#ctor(System.String)">
-    <parameter name="comment">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:JetBrains.Annotations.PathReferenceAttribute.#ctor(System.String)">
-    <parameter name="basePath">
-      <attribute ctor="M:JetBrains.Annotations.PathReferenceAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:JetBrains.Annotations.HtmlAttributeValueAttribute.#ctor(System.String)">
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="P:JetBrains.Annotations.HtmlAttributeValueAttribute.Name">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:JetBrains.Annotations.AspRequiredAttributeAttribute.#ctor(System.String)">
-    <parameter name="attribute">
+    <parameter name="request">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:Ninject.Infrastructure.Language.ExtensionsForIEnumerableOfT.Map``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
-    <parameter name="series">
+    <parameter name="action">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="action">
+    <parameter name="series">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -673,16 +546,12 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Infrastructure.Language.ExtensionsForMemberInfo.HasAttribute``1(System.Reflection.MemberInfo)">
-    <parameter name="member">
+  <member name="M:Ninject.Infrastructure.Language.ExtensionsForMemberInfo.GetCustomAttributesExtended(System.Reflection.MemberInfo,System.Type,System.Boolean)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="attributeType">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="M:Ninject.Infrastructure.Language.ExtensionsForMemberInfo.HasAttribute(System.Reflection.MemberInfo,System.Type)">
     <parameter name="member">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="type">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -695,17 +564,21 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Infrastructure.Language.ExtensionsForMemberInfo.IsPrivate(System.Reflection.PropertyInfo)">
-    <parameter name="propertyInfo">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Infrastructure.Language.ExtensionsForMemberInfo.GetCustomAttributesExtended(System.Reflection.MemberInfo,System.Type,System.Boolean)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  <member name="M:Ninject.Infrastructure.Language.ExtensionsForMemberInfo.HasAttribute(System.Reflection.MemberInfo,System.Type)">
     <parameter name="member">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="attributeType">
+    <parameter name="type">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Infrastructure.Language.ExtensionsForMemberInfo.HasAttribute``1(System.Reflection.MemberInfo)">
+    <parameter name="member">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Infrastructure.Language.ExtensionsForMemberInfo.IsPrivate(System.Reflection.PropertyInfo)">
+    <parameter name="propertyInfo">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -715,18 +588,20 @@
       <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Infrastructure.Multimap`2.Item(`0)">
+  <member name="M:Ninject.Infrastructure.Multimap`2.Add(`0,`1)">
+    <parameter name="key">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Infrastructure.Multimap`2.ContainsKey(`0)">
     <parameter name="key">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Infrastructure.Multimap`2.Keys">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Infrastructure.Multimap`2.Values">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Infrastructure.Multimap`2.Add(`0,`1)">
+  <member name="M:Ninject.Infrastructure.Multimap`2.ContainsValue(`0,`1)">
     <parameter name="key">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -747,32 +622,13 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Infrastructure.Multimap`2.ContainsKey(`0)">
-    <parameter name="key">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Infrastructure.Multimap`2.ContainsValue(`0,`1)">
-    <parameter name="key">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="value">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="P:Ninject.INinjectSettings.DefaultScopeCallback">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.INinjectSettings.ExtensionSearchPatterns">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.INinjectSettings.Get``1(System.String,``0)">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    <parameter name="key">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="defaultValue">
       <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="key">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:Ninject.INinjectSettings.Set(System.String,System.Object)">
@@ -789,15 +645,34 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
+  <member name="M:Ninject.Injection.IInjectorFactory.Create(System.Reflection.MethodInfo)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="method">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
   <member name="M:Ninject.Injection.IInjectorFactory.Create(System.Reflection.PropertyInfo)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="property">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Injection.IInjectorFactory.Create(System.Reflection.MethodInfo)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="method">
+  <member name="M:Ninject.KernelBase.#ctor(Ninject.Components.IComponentContainer,Ninject.INinjectSettings,Ninject.Modules.INinjectModule[])">
+    <parameter name="components">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="modules">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="settings">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.KernelBase.#ctor(Ninject.INinjectSettings,Ninject.Modules.INinjectModule[])">
+    <parameter name="modules">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="settings">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -806,27 +681,22 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.KernelBase.#ctor(Ninject.INinjectSettings,Ninject.Modules.INinjectModule[])">
-    <parameter name="settings">
+  <member name="M:Ninject.KernelBase.CreateContext(Ninject.Activation.IRequest,Ninject.Planning.Bindings.IBinding)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="binding">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="modules">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.KernelBase.#ctor(Ninject.Components.IComponentContainer,Ninject.INinjectSettings,Ninject.Modules.INinjectModule[])">
-    <parameter name="components">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="settings">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="modules">
+    <parameter name="request">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:Ninject.KernelBase.GetBindingPrecedenceComparer">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.KernelBase.HandleMissingBinding(Ninject.Activation.IRequest)">
+    <parameter name="request">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.KernelBase.SatifiesRequest(Ninject.Activation.IRequest)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -834,30 +704,42 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.KernelBase.HandleMissingBinding(Ninject.Activation.IRequest)">
-    <parameter name="request">
+  <member name="M:Ninject.ModuleLoadExtensions.Load(Ninject.IKernel,Ninject.Modules.INinjectModule[])">
+    <parameter name="kernel">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="modules">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.KernelBase.CreateContext(Ninject.Activation.IRequest,Ninject.Planning.Bindings.IBinding)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="request">
+  <member name="M:Ninject.ModuleLoadExtensions.Load(Ninject.IKernel,System.Reflection.Assembly[])">
+    <parameter name="assemblies">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="binding">
+    <parameter name="kernel">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ModuleLoadExtensions.Load(Ninject.IKernel,System.String[])">
+    <parameter name="filePatterns">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="kernel">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ModuleLoadExtensions.Load``1(Ninject.IKernel)">
+    <parameter name="kernel">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:Ninject.Modules.CompiledModuleLoaderPlugin.#ctor(Ninject.IKernel,Ninject.Modules.IAssemblyNameRetriever)">
-    <parameter name="kernel">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="assemblyNameRetriever">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Modules.CompiledModuleLoaderPlugin.Kernel">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="kernel">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.Modules.IAssemblyNameRetriever.GetAssemblyNames(System.Collections.Generic.IEnumerable{System.String},System.Predicate{System.Reflection.Assembly})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -873,16 +755,10 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Modules.IModuleLoaderPlugin.SupportedExtensions">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Modules.IModuleLoaderPlugin.LoadModules(System.Collections.Generic.IEnumerable{System.String})">
     <parameter name="filenames">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Modules.INinjectModule.Name">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Modules.INinjectModule.OnLoad(Ninject.IKernel)">
     <parameter name="kernel">
@@ -894,50 +770,17 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Modules.ModuleLoader.Kernel">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Modules.ModuleLoader.#ctor(Ninject.IKernel)">
     <parameter name="kernel">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Modules.NinjectModule.Bindings">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Parameters.ConstructorArgument.#ctor(System.String,System.Object)">
+  <member name="M:Ninject.NamedAttribute.#ctor(System.String)">
     <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="value">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Parameters.ConstructorArgument.#ctor(System.String,System.Func{Ninject.Activation.IContext,System.Object})">
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="valueCallback">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:Ninject.Parameters.ConstructorArgument.#ctor(System.String,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object})">
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="valueCallback">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Parameters.ConstructorArgument.#ctor(System.String,System.Object,System.Boolean)">
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="value">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Parameters.ConstructorArgument.#ctor(System.String,System.Func{Ninject.Activation.IContext,System.Object},System.Boolean)">
     <parameter name="name">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -953,6 +796,38 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
+  <member name="M:Ninject.Parameters.ConstructorArgument.#ctor(System.String,System.Func{Ninject.Activation.IContext,System.Object})">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="valueCallback">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Parameters.ConstructorArgument.#ctor(System.String,System.Func{Ninject.Activation.IContext,System.Object},System.Boolean)">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="valueCallback">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Parameters.ConstructorArgument.#ctor(System.String,System.Object)">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Parameters.ConstructorArgument.#ctor(System.String,System.Object,System.Boolean)">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
   <member name="M:Ninject.Parameters.IConstructorArgument.AppliesToTarget(Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget)">
     <parameter name="context">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -960,9 +835,6 @@
     <parameter name="target">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Parameters.IParameter.Name">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Parameters.IParameter.GetValue(Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget)">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
@@ -973,15 +845,12 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Parameters.Parameter.ValueCallback">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Parameters.Parameter.#ctor(System.String,System.Object,System.Boolean)">
+  <member name="M:Ninject.Parameters.Parameter.#ctor(System.String,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object},System.Boolean)">
     <parameter name="name">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="value">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="valueCallback">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:Ninject.Parameters.Parameter.#ctor(System.String,System.Func{Ninject.Activation.IContext,System.Object},System.Boolean)">
@@ -992,7 +861,23 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Parameters.Parameter.#ctor(System.String,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object},System.Boolean)">
+  <member name="M:Ninject.Parameters.Parameter.#ctor(System.String,System.Object,System.Boolean)">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Parameters.PropertyValue.#ctor(System.String,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object})">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="valueCallback">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Parameters.PropertyValue.#ctor(System.String,System.Func{Ninject.Activation.IContext,System.Object})">
     <parameter name="name">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -1006,22 +891,6 @@
     </parameter>
     <parameter name="value">
       <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Parameters.PropertyValue.#ctor(System.String,System.Func{Ninject.Activation.IContext,System.Object})">
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="valueCallback">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Parameters.PropertyValue.#ctor(System.String,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object})">
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="valueCallback">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:Ninject.Parameters.TypeMatchingConstructorArgument.#ctor(System.Type,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object})">
@@ -1070,10 +939,10 @@
     </parameter>
   </member>
   <member name="M:Ninject.Planning.Bindings.Binding.#ctor(System.Type,Ninject.Planning.Bindings.IBindingConfiguration)">
-    <parameter name="service">
+    <parameter name="configuration">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="configuration">
+    <parameter name="service">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -1088,15 +957,6 @@
       <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Planning.Bindings.BindingBuilder.BindingConfiguration">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Bindings.BindingBuilder.Kernel">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Bindings.BindingBuilder.ServiceNames">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Planning.Bindings.BindingBuilder.InternalTo``1">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
@@ -1106,6 +966,12 @@
   <member name="M:Ninject.Planning.Bindings.BindingBuilder.InternalToConfiguration``1(``0)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Planning.Bindings.BindingBuilder.InternalToConstructor``1(System.Linq.Expressions.Expression{System.Func{Ninject.Syntax.IConstructorArgumentSyntax,``0}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="newExpression">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -1121,22 +987,27 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Planning.Bindings.BindingBuilder.ToProviderInternal``2">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Planning.Bindings.BindingBuilder.ToProviderInternal``1(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="providerType">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Planning.Bindings.BindingBuilder.InternalToConstructor``1(System.Linq.Expressions.Expression{System.Func{Ninject.Syntax.IConstructorArgumentSyntax,``0}})">
+  <member name="M:Ninject.Planning.Bindings.BindingBuilder.ToProviderInternal``2">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="newExpression">
+  </member>
+  <member name="M:Ninject.Planning.Bindings.BindingBuilder`1.#ctor(Ninject.Planning.Bindings.IBinding,Ninject.IKernel,System.String)">
+    <parameter name="binding">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
+    <parameter name="kernel">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="serviceNames">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
   </member>
-  <member name="M:Ninject.Planning.Bindings.BindingBuilder`4.#ctor(Ninject.Planning.Bindings.IBindingConfiguration,Ninject.IKernel,System.String)">
+  <member name="M:Ninject.Planning.Bindings.BindingBuilder`2.#ctor(Ninject.Planning.Bindings.IBindingConfiguration,Ninject.IKernel,System.String)">
     <parameter name="bindingConfigurationConfiguration">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -1158,7 +1029,7 @@
       <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Planning.Bindings.BindingBuilder`2.#ctor(Ninject.Planning.Bindings.IBindingConfiguration,Ninject.IKernel,System.String)">
+  <member name="M:Ninject.Planning.Bindings.BindingBuilder`4.#ctor(Ninject.Planning.Bindings.IBindingConfiguration,Ninject.IKernel,System.String)">
     <parameter name="bindingConfigurationConfiguration">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -1169,54 +1040,16 @@
       <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Planning.Bindings.BindingBuilder`1.#ctor(Ninject.Planning.Bindings.IBinding,Ninject.IKernel,System.String)">
-    <parameter name="binding">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="kernel">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="serviceNames">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="P:Ninject.Planning.Bindings.BindingBuilder`1.Binding">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Planning.Bindings.BindingConfigurationBuilder`1.#ctor(Ninject.Planning.Bindings.IBindingConfiguration,System.String,Ninject.IKernel)">
     <parameter name="bindingConfiguration">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="serviceNames">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
     <parameter name="kernel">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Planning.Bindings.IBinding.BindingConfiguration">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Bindings.IBinding.Service">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.Metadata">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.ProviderCallback">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.ScopeCallback">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.Parameters">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.ActivationActions">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.DeactivationActions">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="serviceNames">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.Planning.Bindings.IBindingConfiguration.GetProvider(Ninject.Activation.IContext)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -1235,14 +1068,6 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Planning.Bindings.IBindingMetadata.Name">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Planning.Bindings.IBindingMetadata.Has(System.String)">
-    <parameter name="key">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
   <member name="M:Ninject.Planning.Bindings.IBindingMetadata.Get``1(System.String)">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     <parameter name="key">
@@ -1251,11 +1076,16 @@
   </member>
   <member name="M:Ninject.Planning.Bindings.IBindingMetadata.Get``1(System.String,``0)">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="defaultValue">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
     <parameter name="key">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="defaultValue">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Planning.Bindings.IBindingMetadata.Has(System.String)">
+    <parameter name="key">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:Ninject.Planning.Bindings.IBindingMetadata.Set(System.String,System.Object)">
@@ -1289,9 +1119,6 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Planning.Directives.ConstructorInjectionDirective.Constructor">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Planning.Directives.ConstructorInjectionDirective.#ctor(System.Reflection.ConstructorInfo,Ninject.Injection.ConstructorInjector)">
     <parameter name="constructor">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -1301,24 +1128,18 @@
     </parameter>
   </member>
   <member name="M:Ninject.Planning.Directives.MethodInjectionDirective.#ctor(System.Reflection.MethodInfo,Ninject.Injection.MethodInjector)">
-    <parameter name="method">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="injector">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Planning.Directives.MethodInjectionDirectiveBase`2.Injector">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Directives.MethodInjectionDirectiveBase`2.Targets">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="method">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.Planning.Directives.MethodInjectionDirectiveBase`2.#ctor(`0,`1)">
-    <parameter name="method">
+    <parameter name="injector">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="injector">
+    <parameter name="method">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -1328,17 +1149,11 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Planning.Directives.PropertyInjectionDirective.Injector">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Directives.PropertyInjectionDirective.Target">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Planning.Directives.PropertyInjectionDirective.#ctor(System.Reflection.PropertyInfo,Ninject.Injection.PropertyInjector)">
-    <parameter name="member">
+    <parameter name="injector">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="injector">
+    <parameter name="member">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -1348,31 +1163,22 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Planning.IPlan.Type">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Planning.IPlan.Add(Ninject.Planning.Directives.IDirective)">
     <parameter name="directive">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Planning.IPlan.GetOne``1">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Planning.IPlan.GetAll``1">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
-  <member name="P:Ninject.Planning.IPlanner.Strategies">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  <member name="M:Ninject.Planning.IPlan.GetOne``1">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Planning.IPlanner.GetPlan(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     <parameter name="type">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Planning.Plan.Directives">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Planning.Plan.#ctor(System.Type)">
     <parameter name="type">
@@ -1385,10 +1191,10 @@
     </parameter>
   </member>
   <member name="M:Ninject.Planning.Strategies.ConstructorReflectionStrategy.#ctor(Ninject.Selection.ISelector,Ninject.Injection.IInjectorFactory)">
-    <parameter name="selector">
+    <parameter name="injectorFactory">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="injectorFactory">
+    <parameter name="selector">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -1398,41 +1204,20 @@
     </parameter>
   </member>
   <member name="M:Ninject.Planning.Strategies.MethodReflectionStrategy.#ctor(Ninject.Selection.ISelector,Ninject.Injection.IInjectorFactory)">
-    <parameter name="selector">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="injectorFactory">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Planning.Strategies.PropertyReflectionStrategy.Selector">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Strategies.PropertyReflectionStrategy.InjectorFactory">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="selector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.Planning.Strategies.PropertyReflectionStrategy.#ctor(Ninject.Selection.ISelector,Ninject.Injection.IInjectorFactory)">
-    <parameter name="selector">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="injectorFactory">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="P:Ninject.Planning.Targets.ITarget.Type">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Targets.ITarget.Name">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Targets.ITarget.Member">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Targets.ITarget.Constraint">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Planning.Targets.ITarget.DefaultValue">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="selector">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.Planning.Targets.ITarget.ResolveWithin(Ninject.Activation.IContext)">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
@@ -1453,9 +1238,6 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Planning.Targets.Target`1.Site">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Planning.Targets.Target`1.#ctor(System.Reflection.MemberInfo,`0)">
     <parameter name="member">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -1464,21 +1246,351 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Planning.Targets.Target`1.GetValues(System.Type,Ninject.Activation.IContext)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="service">
+  <member name="M:Ninject.Planning.Targets.Target`1.GetValue(System.Type,Ninject.Activation.IContext)">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="parent">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="parent">
+    <parameter name="service">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Planning.Targets.Target`1.GetValue(System.Type,Ninject.Activation.IContext)">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  <member name="M:Ninject.Planning.Targets.Target`1.GetValues(System.Type,Ninject.Activation.IContext)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="parent">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
     <parameter name="service">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="parent">
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.CanResolve(Ninject.Syntax.IResolutionRoot,System.Type,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.CanResolve(Ninject.Syntax.IResolutionRoot,System.Type,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="constraint">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.CanResolve(Ninject.Syntax.IResolutionRoot,System.Type,System.String,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.CanResolve``1(Ninject.Syntax.IResolutionRoot,Ninject.Parameters.IParameter[])">
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.CanResolve``1(Ninject.Syntax.IResolutionRoot,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+    <parameter name="constraint">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.CanResolve``1(Ninject.Syntax.IResolutionRoot,System.String,Ninject.Parameters.IParameter[])">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.Get(Ninject.Syntax.IResolutionRoot,System.Type,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.Get(Ninject.Syntax.IResolutionRoot,System.Type,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="constraint">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.Get(Ninject.Syntax.IResolutionRoot,System.Type,System.String,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.Get``1(Ninject.Syntax.IResolutionRoot,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.Get``1(Ninject.Syntax.IResolutionRoot,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="constraint">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.Get``1(Ninject.Syntax.IResolutionRoot,System.String,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.GetAll(Ninject.Syntax.IResolutionRoot,System.Type,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.GetAll(Ninject.Syntax.IResolutionRoot,System.Type,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="constraint">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.GetAll(Ninject.Syntax.IResolutionRoot,System.Type,System.String,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.GetAll``1(Ninject.Syntax.IResolutionRoot,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.GetAll``1(Ninject.Syntax.IResolutionRoot,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="constraint">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.GetAll``1(Ninject.Syntax.IResolutionRoot,System.String,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.TryGet(Ninject.Syntax.IResolutionRoot,System.Type,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.TryGet(Ninject.Syntax.IResolutionRoot,System.Type,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="constraint">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.TryGet(Ninject.Syntax.IResolutionRoot,System.Type,System.String,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.TryGet``1(Ninject.Syntax.IResolutionRoot,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.TryGet``1(Ninject.Syntax.IResolutionRoot,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="constraint">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.TryGet``1(Ninject.Syntax.IResolutionRoot,System.String,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.TryGetAndThrowOnInvalidBinding``1(Ninject.Syntax.IResolutionRoot,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.TryGetAndThrowOnInvalidBinding``1(Ninject.Syntax.IResolutionRoot,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="constraint">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.ResolutionExtensions.TryGetAndThrowOnInvalidBinding``1(Ninject.Syntax.IResolutionRoot,System.String,Ninject.Parameters.IParameter[])">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="root">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -1509,10 +1621,10 @@
     </parameter>
   </member>
   <member name="M:Ninject.Selection.Heuristics.StandardConstructorScorer.BindingExists(Ninject.IKernel,Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget)">
-    <parameter name="kernel">
+    <parameter name="context">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-    <parameter name="context">
+    <parameter name="kernel">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
     <parameter name="target">
@@ -1527,22 +1639,16 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Selection.ISelector.ConstructorScorer">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="P:Ninject.Selection.ISelector.InjectionHeuristics">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
   <member name="M:Ninject.Selection.ISelector.SelectConstructorsForInjection(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
   </member>
-  <member name="M:Ninject.Selection.ISelector.SelectPropertiesForInjection(System.Type)">
+  <member name="M:Ninject.Selection.ISelector.SelectMethodsForInjection(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="type">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Selection.ISelector.SelectMethodsForInjection(System.Type)">
+  <member name="M:Ninject.Selection.ISelector.SelectPropertiesForInjection(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="type">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -1556,33 +1662,33 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
+  <member name="M:Ninject.StandardKernel.#ctor(Ninject.INinjectSettings,Ninject.Modules.INinjectModule[])">
+    <parameter name="modules">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="settings">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
   <member name="M:Ninject.StandardKernel.#ctor(Ninject.Modules.INinjectModule[])">
     <parameter name="modules">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="M:Ninject.StandardKernel.#ctor(Ninject.INinjectSettings,Ninject.Modules.INinjectModule[])">
-    <parameter name="settings">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="modules">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingInSyntax`1.InSingletonScope">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingInSyntax`1.InTransientScope">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingInSyntax`1.InThreadScope">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Syntax.IBindingInSyntax`1.InScope(System.Func{Ninject.Activation.IContext,System.Object})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="scope">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingInSyntax`1.InSingletonScope">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingInSyntax`1.InThreadScope">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingInSyntax`1.InTransientScope">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Syntax.IBindingNamedSyntax`1.Named(System.String)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -1596,13 +1702,13 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingOnSyntax`1.OnActivation``1(System.Action{``0})">
+  <member name="M:Ninject.Syntax.IBindingOnSyntax`1.OnActivation(System.Action{Ninject.Activation.IContext,`0})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="action">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingOnSyntax`1.OnActivation(System.Action{Ninject.Activation.IContext,`0})">
+  <member name="M:Ninject.Syntax.IBindingOnSyntax`1.OnActivation``1(System.Action{``0})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="action">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -1620,13 +1726,13 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingOnSyntax`1.OnDeactivation``1(System.Action{``0})">
+  <member name="M:Ninject.Syntax.IBindingOnSyntax`1.OnDeactivation(System.Action{Ninject.Activation.IContext,`0})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="action">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingOnSyntax`1.OnDeactivation(System.Action{Ninject.Activation.IContext,`0})">
+  <member name="M:Ninject.Syntax.IBindingOnSyntax`1.OnDeactivation``1(System.Action{``0})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="action">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -1635,6 +1741,17 @@
   <member name="M:Ninject.Syntax.IBindingOnSyntax`1.OnDeactivation``1(System.Action{Ninject.Activation.IContext,``0})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="action">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingRoot.AddBinding(Ninject.Planning.Bindings.IBinding)">
+    <parameter name="binding">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingRoot.Bind(System.Type[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="services">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -1650,14 +1767,9 @@
   <member name="M:Ninject.Syntax.IBindingRoot.Bind``4">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
-  <member name="M:Ninject.Syntax.IBindingRoot.Bind(System.Type[])">
+  <member name="M:Ninject.Syntax.IBindingRoot.Rebind(System.Type[])">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="services">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingRoot.Unbind(System.Type)">
-    <parameter name="service">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -1673,162 +1785,15 @@
   <member name="M:Ninject.Syntax.IBindingRoot.Rebind``4">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
-  <member name="M:Ninject.Syntax.IBindingRoot.Rebind(System.Type[])">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="services">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingRoot.AddBinding(Ninject.Planning.Bindings.IBinding)">
-    <parameter name="binding">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
   <member name="M:Ninject.Syntax.IBindingRoot.RemoveBinding(Ninject.Planning.Bindings.IBinding)">
     <parameter name="binding">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`4.To``1">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`4.To(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="implementation">
+  <member name="M:Ninject.Syntax.IBindingRoot.Unbind(System.Type)">
+    <parameter name="service">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToProvider``1">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToProvider``2">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToProvider(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="providerType">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToProvider``1(Ninject.Activation.IProvider{``0})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="provider">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToMethod``1(System.Func{Ninject.Activation.IContext,``0})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="method">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToConstant``1(``0)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="value">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToConstructor``1(System.Linq.Expressions.Expression{System.Func{Ninject.Syntax.IConstructorArgumentSyntax,``0}})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="newExpression">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`3.To``1">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`3.To(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="implementation">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToProvider``1">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToProvider``2">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToProvider(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="providerType">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToProvider``1(Ninject.Activation.IProvider{``0})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="provider">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToMethod``1(System.Func{Ninject.Activation.IContext,``0})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="method">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToConstant``1(``0)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="value">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToConstructor``1(System.Linq.Expressions.Expression{System.Func{Ninject.Syntax.IConstructorArgumentSyntax,``0}})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="newExpression">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`2.To``1">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`2.To(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="implementation">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToProvider``1">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToProvider``2">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToProvider(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="providerType">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToProvider``1(Ninject.Activation.IProvider{``0})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="provider">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToMethod``1(System.Func{Ninject.Activation.IContext,``0})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="method">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToConstant``1(``0)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="value">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToConstructor``1(System.Linq.Expressions.Expression{System.Func{Ninject.Syntax.IConstructorArgumentSyntax,``0}})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="newExpression">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToSelf">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`1.To``1">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Syntax.IBindingToSyntax`1.To(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -1836,18 +1801,18 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToProvider``1">
+  <member name="M:Ninject.Syntax.IBindingToSyntax`1.To``1">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToProvider(System.Type)">
+  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToConstant``1(``0)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="providerType">
+    <parameter name="value">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToProvider``1(Ninject.Activation.IProvider{``0})">
+  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToConstructor``1(System.Linq.Expressions.Expression{System.Func{Ninject.Syntax.IConstructorArgumentSyntax,``0}})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="provider">
+    <parameter name="newExpression">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -1863,17 +1828,158 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToConstant``1(``0)">
+  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToProvider(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="providerType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToProvider``1">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToProvider``1(Ninject.Activation.IProvider{``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="provider">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToSelf">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`2.To(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="implementation">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`2.To``1">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToConstant``1(``0)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="value">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingToSyntax`1.ToConstructor``1(System.Linq.Expressions.Expression{System.Func{Ninject.Syntax.IConstructorArgumentSyntax,``0}})">
+  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToConstructor``1(System.Linq.Expressions.Expression{System.Func{Ninject.Syntax.IConstructorArgumentSyntax,``0}})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="newExpression">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToMethod``1(System.Func{Ninject.Activation.IContext,``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="method">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToProvider(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="providerType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToProvider``1">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToProvider``1(Ninject.Activation.IProvider{``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="provider">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`2.ToProvider``2">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`3.To(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="implementation">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`3.To``1">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToConstant``1(``0)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToConstructor``1(System.Linq.Expressions.Expression{System.Func{Ninject.Syntax.IConstructorArgumentSyntax,``0}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="newExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToMethod``1(System.Func{Ninject.Activation.IContext,``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="method">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToProvider(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="providerType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToProvider``1">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToProvider``1(Ninject.Activation.IProvider{``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="provider">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`3.ToProvider``2">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`4.To(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="implementation">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`4.To``1">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToConstant``1(``0)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToConstructor``1(System.Linq.Expressions.Expression{System.Func{Ninject.Syntax.IConstructorArgumentSyntax,``0}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="newExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToMethod``1(System.Func{Ninject.Activation.IContext,``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="method">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToProvider(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="providerType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToProvider``1">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToProvider``1(Ninject.Activation.IProvider{``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="provider">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingToSyntax`4.ToProvider``2">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.When(System.Func{Ninject.Activation.IRequest,System.Boolean})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -1881,22 +1987,31 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenInjectedInto``1">
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenAnyAncestorMatches(System.Predicate{Ninject.Activation.IContext})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenInjectedInto(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="parent">
+    <parameter name="predicate">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenInjectedInto(System.Type[])">
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenAnyAncestorNamed(System.String)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="parents">
+    <parameter name="name">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenInjectedExactlyInto``1">
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenAnyAnchestorNamed(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenClassHas(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="attributeType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenClassHas``1">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenInjectedExactlyInto(System.Type)">
@@ -1911,20 +2026,23 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenClassHas``1">
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenInjectedExactlyInto``1">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenMemberHas``1">
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenInjectedInto(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenTargetHas``1">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenClassHas(System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="attributeType">
+    <parameter name="parent">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenInjectedInto(System.Type[])">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="parents">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenInjectedInto``1">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenMemberHas(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -1932,27 +2050,12 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenTargetHas(System.Type)">
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenMemberHas``1">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="attributeType">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenParentNamed(System.String)">
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenNoAncestorMatches(System.Predicate{Ninject.Activation.IContext})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenAnyAnchestorNamed(System.String)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenAnyAncestorNamed(System.String)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="name">
+    <parameter name="predicate">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -1962,15 +2065,36 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenAnyAncestorMatches(System.Predicate{Ninject.Activation.IContext})">
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenParentNamed(System.String)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="predicate">
+    <parameter name="name">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenNoAncestorMatches(System.Predicate{Ninject.Activation.IContext})">
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenTargetHas(System.Type)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="predicate">
+    <parameter name="attributeType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingWhenSyntax`1.WhenTargetHas``1">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithConstructorArgument(System.String,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="callback">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithConstructorArgument(System.String,System.Func{Ninject.Activation.IContext,System.Object})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="callback">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="name">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -1983,27 +2107,21 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithConstructorArgument(System.String,System.Func{Ninject.Activation.IContext,System.Object})">
+  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithConstructorArgument(System.Type,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="callback">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithConstructorArgument(System.String,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="name">
+    <parameter name="type">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithConstructorArgument(System.Type,System.Func{Ninject.Activation.IContext,System.Object})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     <parameter name="callback">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithConstructorArgument``1(``0)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="value">
+    <parameter name="type">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -2016,54 +2134,9 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithConstructorArgument(System.Type,System.Func{Ninject.Activation.IContext,System.Object})">
+  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithConstructorArgument``1(``0)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="type">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="callback">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithConstructorArgument(System.Type,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="type">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="callback">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithPropertyValue(System.String,System.Object)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="value">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithPropertyValue(System.String,System.Func{Ninject.Activation.IContext,System.Object})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="callback">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithPropertyValue(System.String,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object})">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="callback">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithParameter(Ninject.Parameters.IParameter)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="parameter">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -2076,8 +2149,38 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="P:Ninject.Syntax.IConstructorArgumentSyntax.Context">
+  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithParameter(Ninject.Parameters.IParameter)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="parameter">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithPropertyValue(System.String,System.Func{Ninject.Activation.IContext,Ninject.Planning.Targets.ITarget,System.Object})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="callback">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithPropertyValue(System.String,System.Func{Ninject.Activation.IContext,System.Object})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="callback">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Ninject.Syntax.IBindingWithSyntax`1.WithPropertyValue(System.String,System.Object)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
   </member>
   <member name="M:Ninject.Syntax.IResolutionRoot.CanResolve(Ninject.Activation.IRequest)">
     <parameter name="request">
@@ -2089,21 +2192,15 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.Syntax.IResolutionRoot.Resolve(Ninject.Activation.IRequest)">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="request">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
   <member name="M:Ninject.Syntax.IResolutionRoot.CreateRequest(System.Type,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},System.Collections.Generic.IEnumerable{Ninject.Parameters.IParameter},System.Boolean,System.Boolean)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
     <parameter name="constraint">
       <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
     <parameter name="parameters">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="service">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
@@ -2112,363 +2209,267 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.ModuleLoadExtensions.Load``1(Ninject.IKernel)">
-    <parameter name="kernel">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ModuleLoadExtensions.Load(Ninject.IKernel,Ninject.Modules.INinjectModule[])">
-    <parameter name="kernel">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="modules">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ModuleLoadExtensions.Load(Ninject.IKernel,System.String[])">
-    <parameter name="kernel">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="filePatterns">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ModuleLoadExtensions.Load(Ninject.IKernel,System.Reflection.Assembly[])">
-    <parameter name="kernel">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="assemblies">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ResolutionExtensions.Get``1(Ninject.Syntax.IResolutionRoot,Ninject.Parameters.IParameter[])">
+  <member name="M:Ninject.Syntax.IResolutionRoot.Resolve(Ninject.Activation.IRequest)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
+    <parameter name="request">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.Get``1(Ninject.Syntax.IResolutionRoot,System.String,Ninject.Parameters.IParameter[])">
+  <member name="P:JetBrains.Annotations.BaseTypeRequiredAttribute.BaseType">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.Get``1(Ninject.Syntax.IResolutionRoot,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+  <member name="P:JetBrains.Annotations.HtmlAttributeValueAttribute.Name">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="constraint">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.TryGet``1(Ninject.Syntax.IResolutionRoot,Ninject.Parameters.IParameter[])">
+  <member name="P:JetBrains.Annotations.MeansImplicitUseAttribute.TargetFlags">
+    <attribute ctor="M:JetBrains.Annotations.UsedImplicitlyAttribute.#ctor" />
+  </member>
+  <member name="P:JetBrains.Annotations.MeansImplicitUseAttribute.UseKindFlags">
+    <attribute ctor="M:JetBrains.Annotations.UsedImplicitlyAttribute.#ctor" />
+  </member>
+  <member name="P:JetBrains.Annotations.ValueProviderAttribute.Name">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.Blocks.ActivationBlock.Parent">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.Caching.Cache.Pipeline">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.Context.Cache">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.Context.Pipeline">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.Context.Planner">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.IContext.Binding">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.IContext.GenericArguments">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.TryGet``1(Ninject.Syntax.IResolutionRoot,System.String,Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Activation.IContext.Kernel">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.IContext.Parameters">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.IContext.Plan">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.TryGet``1(Ninject.Syntax.IResolutionRoot,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Activation.IContext.Request">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.InstanceReference.Instance">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="constraint">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.TryGetAndThrowOnInvalidBinding``1(Ninject.Syntax.IResolutionRoot,Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Activation.IPipeline.Strategies">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.IProvider.Type">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.IRequest.ActiveBindings">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.IRequest.Constraint">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.TryGetAndThrowOnInvalidBinding``1(Ninject.Syntax.IResolutionRoot,System.String,Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Activation.IRequest.Parameters">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.IRequest.ParentContext">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.TryGetAndThrowOnInvalidBinding``1(Ninject.Syntax.IResolutionRoot,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Activation.IRequest.ParentRequest">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="constraint">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.GetAll``1(Ninject.Syntax.IResolutionRoot,Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Activation.IRequest.Service">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.GetAll``1(Ninject.Syntax.IResolutionRoot,System.String,Ninject.Parameters.IParameter[])">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ResolutionExtensions.GetAll``1(Ninject.Syntax.IResolutionRoot,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="constraint">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ResolutionExtensions.Get(Ninject.Syntax.IResolutionRoot,System.Type,Ninject.Parameters.IParameter[])">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ResolutionExtensions.Get(Ninject.Syntax.IResolutionRoot,System.Type,System.String,Ninject.Parameters.IParameter[])">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ResolutionExtensions.Get(Ninject.Syntax.IResolutionRoot,System.Type,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
-    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="constraint">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ResolutionExtensions.TryGet(Ninject.Syntax.IResolutionRoot,System.Type,Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Activation.IRequest.Target">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.TryGet(Ninject.Syntax.IResolutionRoot,System.Type,System.String,Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Activation.Providers.CallbackProvider`1.Method">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.Providers.ConstantProvider`1.Value">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.Providers.StandardProvider.ConstructorScorer">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.Providers.StandardProvider.Planner">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Activation.Request.ScopeCallback">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.TryGet(Ninject.Syntax.IResolutionRoot,System.Type,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Components.IComponentContainer.Kernel">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="constraint">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.GetAll(Ninject.Syntax.IResolutionRoot,System.Type,Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Components.INinjectComponent.Settings">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.IKernel.Components">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.GetAll(Ninject.Syntax.IResolutionRoot,System.Type,System.String,Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.IKernel.Settings">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.GetAll(Ninject.Syntax.IResolutionRoot,System.Type,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Infrastructure.BaseWeakReference.Target">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="constraint">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.CanResolve``1(Ninject.Syntax.IResolutionRoot,Ninject.Parameters.IParameter[])">
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ResolutionExtensions.CanResolve``1(Ninject.Syntax.IResolutionRoot,System.String,Ninject.Parameters.IParameter[])">
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ResolutionExtensions.CanResolve``1(Ninject.Syntax.IResolutionRoot,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="constraint">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-  </member>
-  <member name="M:Ninject.ResolutionExtensions.CanResolve(Ninject.Syntax.IResolutionRoot,System.Type,Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Infrastructure.Future`1.Callback">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
+  </member>
+  <member name="P:Ninject.Infrastructure.Future`1.Value">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Infrastructure.IHaveBindingConfiguration.BindingConfiguration">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Infrastructure.IHaveKernel.Kernel">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Infrastructure.Multimap`2.Item(`0)">
+    <parameter name="key">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.CanResolve(Ninject.Syntax.IResolutionRoot,System.Type,System.String,Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Infrastructure.Multimap`2.Keys">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="name">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
   </member>
-  <member name="M:Ninject.ResolutionExtensions.CanResolve(Ninject.Syntax.IResolutionRoot,System.Type,System.Func{Ninject.Planning.Bindings.IBindingMetadata,System.Boolean},Ninject.Parameters.IParameter[])">
+  <member name="P:Ninject.Infrastructure.Multimap`2.Values">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    <parameter name="root">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="service">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="constraint">
-      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-    </parameter>
-    <parameter name="parameters">
-      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
-    </parameter>
+  </member>
+  <member name="P:Ninject.INinjectSettings.DefaultScopeCallback">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.INinjectSettings.ExtensionSearchPatterns">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Modules.CompiledModuleLoaderPlugin.Kernel">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Modules.IModuleLoaderPlugin.SupportedExtensions">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Modules.INinjectModule.Name">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Modules.ModuleLoader.Kernel">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Modules.NinjectModule.Bindings">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.NamedAttribute.Name">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Parameters.IParameter.Name">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Parameters.Parameter.ValueCallback">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.BindingBuilder.BindingConfiguration">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.BindingBuilder.Kernel">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.BindingBuilder.ServiceNames">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.BindingBuilder`1.Binding">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.IBinding.BindingConfiguration">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.IBinding.Service">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.ActivationActions">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.DeactivationActions">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.Metadata">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.Parameters">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.ProviderCallback">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.IBindingConfiguration.ScopeCallback">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Bindings.IBindingMetadata.Name">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Directives.ConstructorInjectionDirective.Constructor">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Directives.MethodInjectionDirectiveBase`2.Injector">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Directives.MethodInjectionDirectiveBase`2.Targets">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Directives.PropertyInjectionDirective.Injector">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Directives.PropertyInjectionDirective.Target">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.IPlan.Type">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.IPlanner.Strategies">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Plan.Directives">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Strategies.PropertyReflectionStrategy.InjectorFactory">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Strategies.PropertyReflectionStrategy.Selector">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Targets.ITarget.Constraint">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Targets.ITarget.DefaultValue">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Targets.ITarget.Member">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Targets.ITarget.Name">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Targets.ITarget.Type">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Planning.Targets.Target`1.Site">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Selection.ISelector.ConstructorScorer">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Selection.ISelector.InjectionHeuristics">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:Ninject.Syntax.IConstructorArgumentSyntax.Context">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
 </assembly>
