@@ -31,15 +31,30 @@ The goal of this project is to augment the official ReSharper.ExternalAnnotation
 ##Annotated Third-Party APIs
 
 * FluentValidation 5.5.0.0
-* Ninject 3.2.0.0 (includes 3.2.2.0)
+* Ninject 3.2.0.0 (includes 3.2.x)
+* EntityFramework 6.0.0.0 (Partially annotated, includes 6.x)
 
 ##Annotated .Net Framework Classes
 
-The following classes are either partially implemented or missing from the official ReSharper External Annotations package.
+The following classes, properties, and methods are either partially implemented or missing from the official ReSharper External Annotations package.  If they are added to the official package in the future, they will be removed from this project.
 
 * mscorlib
 	* Version 4.0.0.0
-		* System.Threading.Tasks.Task
-		* System.Threading.Tasks.Task<T>
-		* System.Threading.Tasks.TaskCompletionSource
+		* T:System.Threading.Tasks.Task
+		* T:System.Threading.Tasks.Task&lt;T&gt;
+		* T:System.Threading.Tasks.TaskCompletionSource
+* System
+	* Version 4.0.0.0
+		* M:System.Diagnostics.FileVersionInfo.GetVersionInfo(string)
+* System.ComponentModel
+	* Version 4.0.0.0
+		* P:System.ServiceModel.Channels.Message.Headers
+		* P:System.ServiceModel.Channels.Message.Properties
+		* P:System.ServiceModel.ClientBase`1.Channel
+		* P:System.ServiceModel.Description.ServiceDescription.Behaviors
+		* P:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers
+		* P:System.ServiceModel.Dispatcher.DispatchRuntime.MessageInspectors
+		* P:System.ServiceModel.OperationContext.IncomingMessageProperties
+		* P:System.ServiceModel.ServiceHostBase.ChannelDispatchers
+		* P:System.ServiceModel.ServiceHostBase.Description
 
