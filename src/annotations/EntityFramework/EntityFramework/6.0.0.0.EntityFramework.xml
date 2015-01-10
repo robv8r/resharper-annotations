@@ -4559,6 +4559,118 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.DateTimePropertyConfiguration)">
+    <parameter name="configuration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration.HasColumnAnnotation(System.String,System.Object)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration.HasColumnName(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnName">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration.HasColumnOrder(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnOrder">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration.HasColumnType(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnType">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration.HasDatabaseGeneratedOption(System.Nullable{})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="databaseGeneratedOption">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration.HasPrecision(System.Byte)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration.IsConcurrencyToken">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration.IsConcurrencyToken(System.Nullable{System.Boolean})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="concurrencyToken">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration.IsOptional">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration.IsRequired">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DecimalPropertyConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.DecimalPropertyConfiguration)">
+    <parameter name="configuration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DecimalPropertyConfiguration.HasColumnAnnotation(System.String,System.Object)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DecimalPropertyConfiguration.HasColumnName(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnName">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DecimalPropertyConfiguration.HasColumnOrder(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnOrder">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DecimalPropertyConfiguration.HasColumnType(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnType">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DecimalPropertyConfiguration.HasDatabaseGeneratedOption(System.Nullable{})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="databaseGeneratedOption">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DecimalPropertyConfiguration.HasPrecision(System.Byte,System.Byte)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DecimalPropertyConfiguration.IsConcurrencyToken">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DecimalPropertyConfiguration.IsConcurrencyToken(System.Nullable{System.Boolean})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="concurrencyToken">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DecimalPropertyConfiguration.IsOptional">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.DecimalPropertyConfiguration.IsRequired">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
   <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration)">
     <parameter name="entityMappingConfiguration">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -4722,6 +4834,26 @@
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthColumnConfiguration.IsVariableLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthPropertyConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.LengthPropertyConfiguration)">
+    <parameter name="configuration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthPropertyConfiguration.HasMaxLength(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthPropertyConfiguration.IsFixedLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthPropertyConfiguration.IsMaxLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthPropertyConfiguration.IsVariableLength">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.ColumnMapping.#ctor(System.Data.Entity.Core.Metadata.Edm.EdmProperty)">
@@ -4931,6 +5063,68 @@
   <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitiveColumnConfiguration.IsRequired">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration)">
+    <parameter name="configuration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.GetType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasColumnAnnotation(System.String,System.Object)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasColumnName(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnName">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasColumnOrder(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnOrder">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasColumnType(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnType">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasDatabaseGeneratedOption(System.Nullable{})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="databaseGeneratedOption">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasParameterName(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="parameterName">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.IsConcurrencyToken">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.IsConcurrencyToken(System.Nullable{System.Boolean})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="concurrencyToken">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.IsOptional">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.IsRequired">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
   <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration)">
     <parameter name="source">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -4942,6 +5136,26 @@
   <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.SetAnnotation(System.String,System.Object)">
     <parameter name="name">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PropertyMappingConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration)">
+    <parameter name="configuration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PropertyMappingConfiguration.HasColumnAnnotation(System.String,System.Object)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PropertyMappingConfiguration.HasColumnName(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnName">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.StringPropertyConfiguration)">
@@ -4992,6 +5206,83 @@
     </parameter>
   </member>
   <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.IsVariableLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.StringPropertyConfiguration)">
+    <parameter name="configuration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.HasColumnAnnotation(System.String,System.Object)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.HasColumnName(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnName">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.HasColumnOrder(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnOrder">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.HasColumnType(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnType">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.HasDatabaseGeneratedOption(System.Nullable{})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="databaseGeneratedOption">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.HasMaxLength(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.IsConcurrencyToken">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.IsConcurrencyToken(System.Nullable{System.Boolean})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="concurrencyToken">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.IsFixedLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.IsMaxLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.IsOptional">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.IsRequired">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.IsUnicode">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.IsUnicode(System.Nullable{System.Boolean})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="unicode">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringPropertyConfiguration.IsVariableLength">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StructuralTypeConfiguration`1.GetType">
