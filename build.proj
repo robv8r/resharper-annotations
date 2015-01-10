@@ -39,7 +39,6 @@
       OutputPaths="%(XmlAnnotationFiles.RelativeDir)sorted.%(XmlAnnotationFiles.FileName).xml"
       XmlInputPaths="%(XmlAnnotationFiles.Identity)"
       XslInputPath="src\xslt\sort.xslt" />
-    <!--<Move SourceFiles="%(XmlAnnotationFiles.Identity)" DestinationFiles="%(XmlAnnotationFiles.RelativeDir)old.%(XmlAnnotationFiles.FileName).xml" />-->
     <Move SourceFiles="%(XmlAnnotationFiles.RelativeDir)sorted.%(XmlAnnotationFiles.FileName).xml" DestinationFiles="%(XmlAnnotationFiles.Identity)" />
   </Target>
   
