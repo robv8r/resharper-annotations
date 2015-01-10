@@ -4321,6 +4321,77 @@
   <member name="M:System.Data.Entity.ModelConfiguration.ComplexTypeConfiguration`1.GetType">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.BinaryPropertyConfiguration)">
+    <parameter name="configuration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.HasColumnAnnotation(System.String,System.Object)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.HasColumnName(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnName">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.HasColumnOrder(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnOrder">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.HasColumnType(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnType">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.HasDatabaseGeneratedOption(System.Nullable{})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="databaseGeneratedOption">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.HasMaxLength(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.IsConcurrencyToken">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.IsConcurrencyToken(System.Nullable{System.Boolean})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="concurrencyToken">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.IsFixedLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.IsMaxLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.IsOptional">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.IsRequired">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.IsRowVersion">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.BinaryPropertyConfiguration.IsVariableLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
   <member name="M:System.Data.Entity.ModelConfiguration.Configuration.ConventionTypeConfiguration.GetType">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
@@ -4488,6 +4559,441 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration)">
+    <parameter name="entityMappingConfiguration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.GetType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.HasTableAnnotation(System.String,System.Object)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.MapInheritedProperties">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Properties``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+    <parameter name="propertiesExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.Byte[]}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.Data.Entity.Spatial.DbGeography}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.Data.Entity.Spatial.DbGeometry}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.DateTime}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.DateTimeOffset}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.Decimal}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.Nullable{System.DateTime}}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.Nullable{System.DateTimeOffset}}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.Nullable{System.Decimal}}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.Nullable{System.TimeSpan}}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.String}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property(System.Linq.Expressions.Expression{System.Func{`0,System.TimeSpan}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property``1(System.Linq.Expressions.Expression{System.Func{`0,System.Nullable{``0}}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Property``1(System.Linq.Expressions.LambdaExpression)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="lambdaExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Requires(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="discriminator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.Requires``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="property">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.ToTable(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="tableName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.ToTable(System.String,System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="schemaName">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="tableName">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthColumnConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.LengthPropertyConfiguration)">
+    <parameter name="configuration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthColumnConfiguration.GetType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthColumnConfiguration.HasMaxLength(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthColumnConfiguration.IsFixedLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthColumnConfiguration.IsMaxLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.LengthColumnConfiguration.IsVariableLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.ColumnMapping.#ctor(System.Data.Entity.Core.Metadata.Edm.EdmProperty)">
+    <parameter name="column">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.ColumnMapping.AddMapping(System.Data.Entity.Core.Metadata.Edm.EntityType,System.Collections.Generic.IList{System.Data.Entity.Core.Metadata.Edm.EdmProperty},System.Collections.Generic.IEnumerable{System.Data.Entity.Core.Mapping.ConditionPropertyMapping},System.Boolean)">
+    <parameter name="conditions">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="entityType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="propertyPath">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.AddNullabilityCondition(System.Data.Entity.ModelConfiguration.Configuration.NotNullConditionConfiguration)">
+    <parameter name="notNullConditionConfiguration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.AddValueCondition(System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration)">
+    <parameter name="valueCondition">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.CleanupUnmappedArtifacts(System.Data.Entity.Core.Metadata.Edm.DbDatabaseMapping,System.Data.Entity.Core.Metadata.Edm.EntityType)">
+    <parameter name="databaseMapping">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="table">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.Clone">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.Configure(System.Data.Entity.Core.Metadata.Edm.DbDatabaseMapping,System.Data.Entity.Core.Common.DbProviderManifest,System.Data.Entity.Core.Metadata.Edm.EntityType,System.Data.Entity.Core.Mapping.EntityTypeMapping@,System.Boolean,System.Int32,System.Int32,System.Collections.Generic.IDictionary{System.String,System.Object})">
+    <parameter name="commonAnnotations">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="databaseMapping">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="entityType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="entityTypeMapping">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="providerManifest">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.ConfigurePropertyMappings(System.Collections.Generic.IList{System.Tuple{System.Data.Entity.Core.Mapping.ColumnMappingBuilder,System.Data.Entity.Core.Metadata.Edm.EntityType}},System.Data.Entity.Core.Common.DbProviderManifest,System.Boolean)">
+    <parameter name="propertyMappings">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="providerManifest">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.MapsAnyInheritedProperties(System.Data.Entity.Core.Metadata.Edm.EntityType)">
+    <parameter name="entityType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.Property``1(System.Data.Entity.ModelConfiguration.Utilities.PropertyPath,System.Func{``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="primitivePropertyConfigurationCreator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="propertyPath">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.PropertyPathToEdmPropertyPath(System.Data.Entity.ModelConfiguration.Utilities.PropertyPath,System.Data.Entity.Core.Metadata.Edm.EntityType)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="entityType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="path">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.SetAnnotation(System.String,System.Object)">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingService.#ctor(System.Data.Entity.Core.Metadata.Edm.DbDatabaseMapping)">
+    <parameter name="databaseMapping">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.PropertyMappingSpecification.#ctor(System.Data.Entity.Core.Metadata.Edm.EntityType,System.Collections.Generic.IList{System.Data.Entity.Core.Metadata.Edm.EdmProperty},System.Collections.Generic.IList{System.Data.Entity.Core.Mapping.ConditionPropertyMapping},System.Boolean)">
+    <parameter name="conditions">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="entityType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="propertyPath">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.SortedEntityTypeIndex.Add(System.Data.Entity.Core.Metadata.Edm.EntitySet,System.Data.Entity.Core.Metadata.Edm.EntityType)">
+    <parameter name="entitySet">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="entityType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.SortedEntityTypeIndex.Contains(System.Data.Entity.Core.Metadata.Edm.EntitySet,System.Data.Entity.Core.Metadata.Edm.EntityType)">
+    <parameter name="entitySet">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="entityType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.SortedEntityTypeIndex.GetEntitySets">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.SortedEntityTypeIndex.GetEntityTypes(System.Data.Entity.Core.Metadata.Edm.EntitySet)">
+    <parameter name="entitySet">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.SortedEntityTypeIndex.IsRoot(System.Data.Entity.Core.Metadata.Edm.EntitySet,System.Data.Entity.Core.Metadata.Edm.EntityType)">
+    <parameter name="entitySet">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="entityType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.TableMapping.#ctor(System.Data.Entity.Core.Metadata.Edm.EntityType)">
+    <parameter name="table">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Mapping.TableMapping.AddEntityTypeMappingFragment(System.Data.Entity.Core.Metadata.Edm.EntitySet,System.Data.Entity.Core.Metadata.Edm.EntityType,System.Data.Entity.Core.Mapping.MappingFragment)">
+    <parameter name="entitySet">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="entityType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="fragment">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.NotNullConditionConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration,System.Data.Entity.ModelConfiguration.Utilities.PropertyPath)">
+    <parameter name="entityMapConfiguration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="propertyPath">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.NotNullConditionConfiguration.Clone(System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration)">
+    <parameter name="owner">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.NotNullConditionConfiguration.Configure(System.Data.Entity.Core.Metadata.Edm.DbDatabaseMapping,System.Data.Entity.Core.Mapping.MappingFragment,System.Data.Entity.Core.Metadata.Edm.EntityType)">
+    <parameter name="databaseMapping">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="entityType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="fragment">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.NotNullConditionConfiguration.GetType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitiveColumnConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration)">
+    <parameter name="configuration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitiveColumnConfiguration.GetType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitiveColumnConfiguration.HasColumnOrder(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnOrder">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitiveColumnConfiguration.HasColumnType(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitiveColumnConfiguration.IsOptional">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.PrimitiveColumnConfiguration.IsRequired">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration)">
+    <parameter name="source">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.Clone">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.SetAnnotation(System.String,System.Object)">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.StringPropertyConfiguration)">
+    <parameter name="configuration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.GetType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.HasColumnOrder(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnOrder">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.HasColumnType(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="columnType">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.HasMaxLength(System.Nullable{System.Int32})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.IsFixedLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.IsMaxLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.IsOptional">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.IsRequired">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.IsUnicode">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.IsUnicode(System.Nullable{System.Boolean})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="unicode">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.IsVariableLength">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
   <member name="M:System.Data.Entity.ModelConfiguration.Configuration.StructuralTypeConfiguration`1.GetType">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
@@ -4649,6 +5155,58 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration,System.String)">
+    <parameter name="discriminator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="entityMapConfiguration">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration.AnyBaseTypeToTableWithoutColumnCondition(System.Data.Entity.Core.Metadata.Edm.DbDatabaseMapping,System.Data.Entity.Core.Metadata.Edm.EntityType,System.Data.Entity.Core.Metadata.Edm.EntityType,System.Data.Entity.Core.Metadata.Edm.EdmProperty)">
+    <parameter name="databaseMapping">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="entityType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration.Clone(System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration)">
+    <parameter name="owner">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration.Configure(System.Data.Entity.Core.Metadata.Edm.DbDatabaseMapping,System.Data.Entity.Core.Mapping.MappingFragment,System.Data.Entity.Core.Metadata.Edm.EntityType,System.Data.Entity.Core.Common.DbProviderManifest)">
+    <parameter name="fragment">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="providerManifest">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration.GetMappingFragmentsWithColumnAsDefaultDiscriminator(System.Data.Entity.Core.Metadata.Edm.DbDatabaseMapping,System.Data.Entity.Core.Metadata.Edm.EntityType,System.Data.Entity.Core.Metadata.Edm.EdmProperty)">
+    <parameter name="databaseMapping">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration.GetType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration.HasValue(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration.HasValue``1(``0)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration.HasValue``1(System.Nullable{``0})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="value">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
   <member name="M:System.Data.Entity.ModelConfiguration.EntityTypeConfiguration`1.#ctor(System.Data.Entity.ModelConfiguration.Configuration.Types.EntityTypeConfiguration)">
     <parameter name="entityTypeConfiguration">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
@@ -4736,6 +5294,21 @@
     </parameter>
     <parameter name="tableName">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Utilities.EdmPropertyPath.#ctor(System.Collections.Generic.IEnumerable{System.Data.Entity.Core.Metadata.Edm.EdmProperty})">
+    <parameter name="components">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Utilities.EdmPropertyPath.#ctor(System.Data.Entity.Core.Metadata.Edm.EdmProperty)">
+    <parameter name="component">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:System.Data.Entity.ModelConfiguration.Utilities.EdmPropertyPath.Equals(System.Data.Entity.ModelConfiguration.Utilities.EdmPropertyPath)">
+    <parameter name="other">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:System.Data.Entity.ObservableCollectionExtensions.ToBindingList``1()">
@@ -6150,6 +6723,111 @@
   </member>
   <member name="P:System.Data.Entity.Internal.Linq.IInternalSetAdapter.InternalSet">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.ConventionTypeConfiguration.ClrType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.ConventionTypeConfiguration`1.ClrType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.EntityMappingConfiguration`1.EntityMappingConfigurationInstance">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.LengthColumnConfiguration.Configuration">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.ColumnMapping.Column">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.ColumnMapping.PropertyMappings">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.Annotations">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.NullabilityConditions">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.PrimitivePropertyConfigurations">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.EntityMappingConfiguration.ValueConditions">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.PropertyMappingSpecification.Conditions">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.PropertyMappingSpecification.EntityType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.PropertyMappingSpecification.PropertyPath">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.TableMapping.ColumnMappings">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.TableMapping.EntityTypes">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Mapping.TableMapping.Table">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.NotNullConditionConfiguration.PropertyPath">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.PrimitiveColumnConfiguration.Configuration">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.Annotations">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.ColumnName">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.ColumnOrder">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.ColumnType">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.ConcurrencyMode">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.DatabaseGeneratedOption">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.IsNullable">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Properties.Primitive.PrimitivePropertyConfiguration.ParameterName">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.StringColumnConfiguration.Configuration">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.StructuralTypeConfiguration`1.Configuration">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Types.StructuralTypeConfiguration.ClrType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Types.StructuralTypeConfiguration.ConfiguredProperties">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Types.StructuralTypeConfiguration.IgnoredProperties">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.Types.StructuralTypeConfiguration.PrimitivePropertyConfigurations">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration.Discriminator">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Configuration.ValueConditionConfiguration.Value">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.Data.Entity.ModelConfiguration.Utilities.EdmPropertyPath.Empty">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="P:System.Data.Entity.Validation.DbEntityValidationException.EntityValidationErrors">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
