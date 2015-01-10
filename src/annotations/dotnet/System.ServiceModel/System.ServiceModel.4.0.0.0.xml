@@ -1,12 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <assembly name="System.ServiceModel, Version=4.0.0.0">
   <member name="P:System.ServiceModel.Channels.Message.Headers">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.ServiceModel.Channels.Message.Properties">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="P:System.ServiceModel.ClientBase`1.Channel">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="P:System.ServiceModel.Description.ServiceDescription.Behaviors">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.ServiceModel.Dispatcher.DispatchRuntime.MessageInspectors">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.ServiceModel.OperationContext.IncomingMessageProperties">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="P:System.ServiceModel.ServiceHostBase.ChannelDispatchers">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
   <member name="P:System.ServiceModel.ServiceHostBase.Description">
