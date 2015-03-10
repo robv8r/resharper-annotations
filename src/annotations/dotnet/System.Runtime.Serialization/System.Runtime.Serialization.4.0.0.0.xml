@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<assembly name="System.ServiceModel, Version=4.0.0.0">
+<assembly name="System.Runtime.Serialization, Version=4.0.0.0">
   <member name="P:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
   </member>
