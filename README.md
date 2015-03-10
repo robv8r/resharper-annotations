@@ -40,16 +40,37 @@ The following classes, properties, and methods are either partially implemented 
 
 * mscorlib
 	* Version 4.0.0.0
-		* T:System.Threading.Tasks.Task
-		* T:System.Threading.Tasks.Task&lt;T&gt;
-		* T:System.Threading.Tasks.TaskCompletionSource
+		* T:System.Threading.Tasks.Task (includes all members)
+		* T:System.Threading.Tasks.Task&lt;T&gt; (includes all members)
+		* T:System.Threading.Tasks.TaskCompletionSource (includes all members)
+		* M:System.Reflection.Assembly.GetEntryAssembly
 * System
 	* Version 4.0.0.0
 		* M:System.Diagnostics.FileVersionInfo.GetVersionInfo(string)
-* System.ComponentModel
+* System.Configuration
 	* Version 4.0.0.0
+		* P:System.Configuration.ConfigurationManager.ConnectionStrings
+		* M:System.Configuration.ConfigurationManager.GetSection(string)
+* System.Runtime.Serialization
+	* Version 4.0.0.0
+		* P:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
+* System.ServiceModel
+	* Version 4.0.0.0
+		* M:System.ServiceModel.Channels.MessageVersion.CreateVersion(System.ServiceModel.EnvelopeVersion)
+		* M:System.ServiceModel.Channels.MessageVersion.CreateVersion(System.ServiceModel.EnvelopeVersion, System.ServiceModel.Channels.AddressingVersion)
+		* M:System.ServiceModel.Dispatcher.IErrorHandler.HandleError(System.Exception)
+		* M:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault(System.Exception,System.ServiceModel.Channels.MessageVersion,System.ServiceModel.Channels.Message@)
 		* P:System.ServiceModel.Channels.Message.Headers
 		* P:System.ServiceModel.Channels.Message.Properties
+		* P:System.ServiceModel.Channels.MessageVersion.Addressing
+		* P:System.ServiceModel.Channels.MessageVersion.Default
+		* P:System.ServiceModel.Channels.MessageVersion.Envelope
+		* P:System.ServiceModel.Channels.MessageVersion.None
+		* P:System.ServiceModel.Channels.MessageVersion.Soap11
+		* P:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressing10
+		* P:System.ServiceModel.Channels.MessageVersion.Soap12
+		* P:System.ServiceModel.Channels.MessageVersion.Soap12WSAddressing10
+		* P:System.ServiceModel.Channels.MessageVersion.Soap12WSAddressingAugust2004
 		* P:System.ServiceModel.ClientBase`1.Channel
 		* P:System.ServiceModel.Description.ServiceDescription.Behaviors
 		* P:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers
@@ -57,4 +78,3 @@ The following classes, properties, and methods are either partially implemented 
 		* P:System.ServiceModel.OperationContext.IncomingMessageProperties
 		* P:System.ServiceModel.ServiceHostBase.ChannelDispatchers
 		* P:System.ServiceModel.ServiceHostBase.Description
-
