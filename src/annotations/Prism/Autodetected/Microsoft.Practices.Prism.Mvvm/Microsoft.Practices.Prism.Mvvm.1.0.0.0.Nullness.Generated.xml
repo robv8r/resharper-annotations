@@ -1,0 +1,117 @@
+<assembly name="Microsoft.Practices.Prism.Mvvm" version="1.0.0.0">
+  <member name="M:Microsoft.Practices.Prism.Commands.CompositeCommand.RegisterCommand(System.Windows.Input.ICommand)">
+    <parameter name="command">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Commands.CompositeCommand.UnregisterCommand(System.Windows.Input.ICommand)">
+    <parameter name="command">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Commands.DelegateCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})">
+    <parameter name="executeMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="canExecuteMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Commands.DelegateCommand`1.FromAsyncHandler(System.Func{`0,System.Threading.Tasks.Task})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="executeMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Commands.DelegateCommand`1.FromAsyncHandler(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="executeMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="canExecuteMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Commands.DelegateCommand.#ctor(System.Action,System.Func{System.Boolean})">
+    <parameter name="executeMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="canExecuteMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Commands.DelegateCommand.FromAsyncHandler(System.Func{System.Threading.Tasks.Task})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="executeMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Commands.DelegateCommand.FromAsyncHandler(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean})">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="executeMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="canExecuteMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Commands.DelegateCommandBase.#ctor(System.Action{System.Object},System.Func{System.Object,System.Boolean})">
+    <parameter name="executeMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="canExecuteMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Commands.DelegateCommandBase.#ctor(System.Func{System.Object,System.Threading.Tasks.Task},System.Func{System.Object,System.Boolean})">
+    <parameter name="executeMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="canExecuteMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.ViewModel.ErrorsContainer`1.#ctor(System.Action{System.String})">
+    <parameter name="raiseErrorsChanged">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.ViewModel.ErrorsContainer`1.SetErrors``1(System.Linq.Expressions.Expression{System.Func{``0}},System.Collections.Generic.IEnumerable{`0})">
+    <parameter name="propertyErrors">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Mvvm.PropertySupport.ExtractPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Mvvm.ViewModelLocationProvider.AutoWireViewModelChanged(Microsoft.Practices.Prism.Mvvm.IView)">
+    <parameter name="view">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Commands.DelegateCommand`1.#ctor(System.Action{`0})">
+    <parameter name="executeMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Commands.DelegateCommand.#ctor(System.Action)">
+    <parameter name="executeMethod">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.Mvvm.BindableBase.OnPropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.ViewModel.ErrorsContainer`1.ClearErrors``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+    <parameter name="propertyExpression">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+</assembly>

@@ -1,0 +1,99 @@
+<assembly name="Microsoft.Practices.Prism.MefExtensions" version="5.0.0.0">
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.Modularity.DownloadedPartCatalogCollection.Add(Microsoft.Practices.Prism.Modularity.ModuleInfo,System.ComponentModel.Composition.Primitives.ComposablePartCatalog)">
+    <parameter name="moduleInfo">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.Modularity.DownloadedPartCatalogCollection.Get(Microsoft.Practices.Prism.Modularity.ModuleInfo)">
+    <parameter name="moduleInfo">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.Modularity.DownloadedPartCatalogCollection.TryGet(Microsoft.Practices.Prism.Modularity.ModuleInfo,System.ComponentModel.Composition.Primitives.ComposablePartCatalog@)">
+    <parameter name="moduleInfo">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.Modularity.DownloadedPartCatalogCollection.Remove(Microsoft.Practices.Prism.Modularity.ModuleInfo)">
+    <parameter name="moduleInfo">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.Modularity.MefModuleInitializer.#ctor(Microsoft.Practices.ServiceLocation.IServiceLocator,Microsoft.Practices.Prism.Logging.ILoggerFacade,Microsoft.Practices.Prism.MefExtensions.Modularity.DownloadedPartCatalogCollection,System.ComponentModel.Composition.Hosting.AggregateCatalog)">
+    <parameter name="serviceLocator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="loggerFacade">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="downloadedPartCatalogs">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="aggregateCatalog">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.Modularity.MefModuleManager.#ctor(Microsoft.Practices.Prism.Modularity.IModuleInitializer,Microsoft.Practices.Prism.Modularity.IModuleCatalog,Microsoft.Practices.Prism.Logging.ILoggerFacade)">
+    <parameter name="moduleInitializer">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="moduleCatalog">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="loggerFacade">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.Modularity.ModuleExportAttribute.#ctor(System.Type)">
+    <parameter name="moduleType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.Regions.MefRegionNavigationService.#ctor(Microsoft.Practices.ServiceLocation.IServiceLocator,Microsoft.Practices.Prism.Regions.IRegionNavigationContentLoader,Microsoft.Practices.Prism.Regions.IRegionNavigationJournal)">
+    <parameter name="serviceLocator">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="navigationContentLoader">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="journal">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.DefaultPrismServiceRegistrar.RegisterRequiredPrismServicesIfMissing(System.ComponentModel.Composition.Hosting.AggregateCatalog)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="aggregateCatalog">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.MefBootstrapper.CreateAggregateCatalog">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.MefBootstrapper.CreateContainer">
+    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.MefServiceLocatorAdapter.DoGetAllInstances(System.Type)">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <parameter name="serviceType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.MefServiceLocatorAdapter.DoGetInstance(System.Type,System.String)">
+    <parameter name="serviceType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="key">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.Modularity.MefFileModuleTypeLoader.LoadModuleType(Microsoft.Practices.Prism.Modularity.ModuleInfo)">
+    <parameter name="moduleInfo">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:Microsoft.Practices.Prism.MefExtensions.Modularity.MefFileModuleTypeLoader.CanLoadModuleType(Microsoft.Practices.Prism.Modularity.ModuleInfo)">
+    <parameter name="moduleInfo">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+</assembly>
