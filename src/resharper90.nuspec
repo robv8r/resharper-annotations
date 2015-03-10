@@ -17,7 +17,7 @@ ReSharper performs code inspection and analysis at design time. It provides feed
 JetBrains has annotated large portions of the .Net Framework and other popular libraries. These annotations are already included in ReSharper. However, there are many class libraries that don't include Code Annotations, and JetBrains hasn't annotated everything (yet).
 
 The goal of the Community External Annotations project in to provide external annotations for popular libraries that otherwise lack them.</description>
-        <!--<releaseNotes>Initial Version.</releaseNotes>-->
+        <releaseNotes>Release 1.0.1.0 was released on March 10th, 2015.  It is a minor update that includes annotations for certain members of System.Configuration and System.Runtime.Serialization.</releaseNotes>
         <summary>Community External Annotations.  **Restart Visual Studio after Installing or Uninstalling.</summary>
         <copyright>Copyright Rob Winningham 2014</copyright>
         <language>en-US</language>
