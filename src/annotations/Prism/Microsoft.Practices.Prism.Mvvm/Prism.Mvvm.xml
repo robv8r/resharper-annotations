@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<assembly name="Microsoft.Practices.Prism.Mvvm">
-  <member name="M:Microsoft.Practices.Prism.Mvvm.BindableBase.OnPropertyChanged(System.String)">
-	<attribute ctor="M:JetBrains.Annotations.NotifyPropertyChangedInvocatorAttribute.#ctor" />
-  </member>
-</assembly>

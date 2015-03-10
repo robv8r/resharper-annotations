@@ -1,0 +1,13 @@
+<assembly name="Prism.Mvvm">
+  <member name="M:Microsoft.Practices.Prism.Mvvm.BindableBase.OnPropertyChanged(System.String)">
+    <attribute ctor="M:JetBrains.Annotations.NotifyPropertyChangedInvocatorAttribute.#ctor" />
+  </member>
+  <member name="M:Microsoft.Practices.Prism.ViewModel.ErrorsContainer`1.SetErrors(System.String,System.Collections.Generic.IEnumerable{`0})">
+    <parameter name="propertyName">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="newValidationResults">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+</assembly>

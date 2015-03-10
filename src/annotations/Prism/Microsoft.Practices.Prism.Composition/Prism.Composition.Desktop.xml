@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<assembly name="Microsoft.Practices.Prism.Composition">
-  <member name="M:Microsoft.Practices.Prism.Modularity.IModule">
-	<attribute ctor="M:JetBrains.Annotations.PublicAPI.#ctor" />
-  </member>
-</assembly>
