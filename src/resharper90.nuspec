@@ -10,8 +10,15 @@
         <projectUrl>https://github.com/robv8r/resharper-annotations</projectUrl>
         <iconUrl>https://github.com/robv8r/resharper-annotations/raw/master/logo.png</iconUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <description>Community External Annotations.  **Restart Visual Studio after Installing or Uninstalling.</description>
+        <description>**Restart Visual Studio after Installing or Uninstalling.
+
+ReSharper performs code inspection and analysis at design time. It provides feedback based on this analysis to help the developer write better code. ReSharper relies on Code Annotations to better understand the meaning and purpose of source code.
+
+JetBrains has annotated large portions of the .Net Framework and other popular libraries. These annotations are already included in ReSharper. However, there are many class libraries that don't include Code Annotations, and JetBrains hasn't annotated everything (yet).
+
+The goal of the Community External Annotations project in to provide external annotations for popular libraries that otherwise lack them.</description>
         <!--<releaseNotes>Initial Version.</releaseNotes>-->
+        <summary>Community External Annotations.  **Restart Visual Studio after Installing or Uninstalling.</summary>
         <copyright>Copyright Rob Winningham 2014</copyright>
         <language>en-US</language>
         <tags>Community External Annotations</tags>
