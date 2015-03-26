@@ -59,6 +59,9 @@ The following classes, properties, and methods are either partially implemented 
 * System.Runtime.Serialization
 	* Version 4.0.0.0
 		* P:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
+* System.Runtime.Caching
+	* Version 4.0.0.0
+		* P:System.Runtime.Caching.MemoryCache.Default
 * System.ServiceModel
 	* Version 4.0.0.0
 		* M:System.ServiceModel.Channels.MessageVersion.CreateVersion(System.ServiceModel.EnvelopeVersion)

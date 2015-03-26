@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assembly name="System.Runtime.Caching, Version=4.0.0.0">
+  <member name="P:System.Runtime.Caching.MemoryCache.Default">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+</assembly>
