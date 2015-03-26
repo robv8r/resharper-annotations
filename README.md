@@ -33,6 +33,7 @@ The goal of this project is to augment the official ReSharper.ExternalAnnotation
 * FluentValidation 5.5.0.0
 * Ninject 3.2.0.0 (includes 3.2.x)
 * EntityFramework 6.0.0.0 (Partially annotated, includes 6.x)
+* IBM.Data.DB2.iSeries 12.0.0.0 (Partially annotated)
 
 ##Annotated .Net Framework Classes
 
