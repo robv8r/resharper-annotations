@@ -54,7 +54,9 @@ The following classes, properties, and methods are either partially implemented 
 		* M:System.Configuration.ConfigurationManager.GetSection(string)
 * System.Data
 	* Version 4.0.0.0
-		* T:System.Data.Common.DbCommand (includes all members)
+		* T:System.Data.Common.DbCommand (includes async members)
+		* T:System.Data.Common.DbDataReader (includes async members)
+		* T:System.Data.SqlClient.SqlCommand (includes async members)
 		* M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String, System.Object)
 		* P:System.Data.DataTable.Rows
 * System.Runtime.Serialization
