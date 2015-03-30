@@ -33,6 +33,8 @@ The goal of this project is to augment the official ReSharper.ExternalAnnotation
 * FluentValidation 5.5.0.0
 * Ninject 3.2.0.0 (includes 3.2.x)
 * EntityFramework 6.0.0.0 (Partially annotated, includes 6.x)
+* IBM.Data.DB2.iSeries 12.0.0.0 (Partially annotated)
+* System.Web.Http 5.2.3.0 (Partially annotated)
 
 ##Annotated .Net Framework Classes
 
@@ -51,9 +53,19 @@ The following classes, properties, and methods are either partially implemented 
 	* Version 4.0.0.0
 		* P:System.Configuration.ConfigurationManager.ConnectionStrings
 		* M:System.Configuration.ConfigurationManager.GetSection(string)
+* System.Data
+	* Version 4.0.0.0
+		* T:System.Data.Common.DbCommand (includes async members)
+		* T:System.Data.Common.DbDataReader (includes async members)
+		* T:System.Data.SqlClient.SqlCommand (includes async members)
+		* M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String, System.Object)
+		* P:System.Data.DataTable.Rows
 * System.Runtime.Serialization
 	* Version 4.0.0.0
 		* P:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
+* System.Runtime.Caching
+	* Version 4.0.0.0
+		* P:System.Runtime.Caching.MemoryCache.Default
 * System.ServiceModel
 	* Version 4.0.0.0
 		* M:System.ServiceModel.Channels.MessageVersion.CreateVersion(System.ServiceModel.EnvelopeVersion)

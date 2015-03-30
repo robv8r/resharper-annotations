@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assembly name="System.Web.Http, Version=5.2.3.0">
+  <member name="T:System.Web.Http.AcceptVerbsAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor()" />
+  </member>
+  <member name="T:System.Web.Http.ApiController">
+    <attribute ctor="M:JetBrains.Annotations.UsedImplicitlyAttribute.#ctor(JetBrains.Annotations.ImplicitUseKindFlags)">
+      <argument>1</argument>
+    </attribute>
+  </member>
+  <member name="T:System.Web.Http.HttpDeleteAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor()" />
+  </member>
+  <member name="T:System.Web.Http.HttpGetAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor()" />
+  </member>
+  <member name="T:System.Web.Http.HttpHeadAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor()" />
+  </member>
+  <member name="T:System.Web.Http.HttpOptionsAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor()" />
+  </member>
+  <member name="T:System.Web.Http.HttpPatchAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor()" />
+  </member>
+  <member name="T:System.Web.Http.HttpPostAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor()" />
+  </member>
+  <member name="T:System.Web.Http.HttpPutAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor()" />
+  </member>
+</assembly>

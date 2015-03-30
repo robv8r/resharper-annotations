@@ -3,7 +3,7 @@
   
   <PropertyGroup>
     <OutputDirectory>bin</OutputDirectory>
-    <Version>1.0.1.0</Version>
+    <Version>1.0.2.0</Version>
   </PropertyGroup>
   
   <ItemGroup>
@@ -26,7 +26,7 @@
   
   <Target Name="Build">
     <MakeDir Directories="$(OutputDirectory)"/>
-    <DownloadFile Condition="!EXISTS('$(OutputDirectory)\NuGet.exe')" Address="http://build.nuget.org/NuGet.exe" FileName="$(OutputDirectory)\NuGet.exe" />    
+    <DownloadFile Condition="!EXISTS('$(OutputDirectory)\NuGet.exe')" Address="http://nuget.org/NuGet.exe" FileName="$(OutputDirectory)\NuGet.exe" />    
     <Exec
       Command="&quot;$(OutputDirectory)\NuGet.exe&quot; pack -Properties &quot;version=$(Version)&quot; -OutputDirectory &quot;$(OutputDirectory)&quot; &quot;%(NuSpecFiles.FullPath)&quot;" />
     <Delete Files="$(OutputDirectory)\NuGet.exe" />
