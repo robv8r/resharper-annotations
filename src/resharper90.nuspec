@@ -17,13 +17,13 @@ ReSharper performs code inspection and analysis at design time. It provides feed
 JetBrains has annotated large portions of the .Net Framework and other popular libraries. These annotations are already included in ReSharper. However, there are many class libraries that don't include Code Annotations, and JetBrains hasn't annotated everything (yet).
 
 The goal of the Community External Annotations project in to provide external annotations for popular libraries that otherwise lack them.</description>
-        <releaseNotes>Release 1.1.0.0 was released on June 23rd, 2015.  It is a minor update that includes support for ReSharper Platform 9.1.</releaseNotes>
+        <releaseNotes>Release $version$ was released on August 21st, 2015.  It is a minor update that includes support for ReSharper Platform 9.2.</releaseNotes>
         <summary>Community External Annotations.  **Restart Visual Studio after Installing or Uninstalling.</summary>
         <copyright>Copyright Rob Winningham 2014 - 2015</copyright>
         <language>en-US</language>
         <tags>Community External Annotations</tags>
         <dependencies>
-            <dependency id="Wave" version="[1.0,3.0)" />
+            <dependency id="Wave" version="[1.0,4.0]" />
         </dependencies>
     </metadata>
     <files>
