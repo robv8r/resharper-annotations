@@ -1,0 +1,5 @@
+<assembly name="Microsoft.Practices.ObjectBuilder">
+    <member name="T:Microsoft.Practices.ObjectBuilder.CreateNewAttribute">
+        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+    </member>
+</assembly>

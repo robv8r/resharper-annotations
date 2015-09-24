@@ -1,0 +1,14 @@
+<assembly name="Microsoft.Practices.CompositeUI">
+    <member name="T:Microsoft.Practices.CompositeUI.EventBroker.EventSubscriptionAttribute">
+        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+    </member>
+    <member name="T:Microsoft.Practices.CompositeUI.EventBroker.EventPublicationAttribute">
+        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+    </member>
+    <member name="T:Microsoft.Practices.CompositeUI.ServiceDependencyAttribute">
+        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+    </member>
+    <member name="T:Microsoft.Practices.CompositeUI.Commands.CommandHandlerAttribute">
+        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+    </member>
+</assembly>
