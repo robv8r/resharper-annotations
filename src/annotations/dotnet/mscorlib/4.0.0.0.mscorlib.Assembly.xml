@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <assembly name="mscorlib, Version=4.0.0.0">
+<!-- Commented out per issue #6
   <member name="M:System.Reflection.Assembly.GetEntryAssembly">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>
+-->
 </assembly>
