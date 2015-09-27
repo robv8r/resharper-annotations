@@ -1,44 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <assembly name="Microsoft.Practices.CompositeUI">
-    <member name="T:Microsoft.Practices.CompositeUI.EventBroker.EventSubscriptionAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.EventBroker.EventPublicationAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.ServiceDependencyAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.Commands.CommandHandlerAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.SmartParts.SmartPartAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.Configuration.ConfigurationAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.ServiceAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.ServiceDependencyAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.TraceSourceAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.StateAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.OptionalDependencyAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.ComponentDependencyAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.RootWorkItemExtensionAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
-    <member name="T:Microsoft.Practices.CompositeUI.ModuleAttribute">
-        <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
-    </member>
+  <member name="T:Microsoft.Practices.CompositeUI.Commands.CommandHandlerAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.ComponentDependencyAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.Configuration.ConfigurationAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.EventBroker.EventPublicationAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.EventBroker.EventSubscriptionAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.ModuleAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.OptionalDependencyAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.RootWorkItemExtensionAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.ServiceAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.ServiceDependencyAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.ServiceDependencyAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.SmartParts.SmartPartAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.StateAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
+  <member name="T:Microsoft.Practices.CompositeUI.TraceSourceAttribute">
+    <attribute ctor="M:JetBrains.Annotations.MeansImplicitUseAttribute.#ctor" />
+  </member>
 </assembly>
