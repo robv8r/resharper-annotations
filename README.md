@@ -4,7 +4,7 @@ The Community ReSharper External Annotations Project is an open source project f
 
 ##Installation
 
-###ReSharper 9.0
+###ReSharper
 
 1. Open Visual Studio
 2. Click ReSharper | Extension Manager...
