@@ -23,7 +23,7 @@ The goal of the Community External Annotations project in to provide external an
         <language>en-US</language>
         <tags>Community External Annotations</tags>
         <dependencies>
-            <dependency id="Wave" version="[1.0,4.0]" />
+            <dependency id="Wave" version="1.0" />
         </dependencies>
     </metadata>
     <files>
