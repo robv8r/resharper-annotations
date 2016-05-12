@@ -3879,9 +3879,11 @@
   </member>
   <member name="M:System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.FirstOrDefaultAsync``1(System.Data.Entity.Infrastructure.IDbAsyncEnumerable{``0})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
   </member>
   <member name="M:System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.FirstOrDefaultAsync``1(System.Data.Entity.Infrastructure.IDbAsyncEnumerable{``0},System.Func{``0,System.Boolean})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="predicate">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -3891,6 +3893,7 @@
   </member>
   <member name="M:System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.FirstOrDefaultAsync``1(System.Data.Entity.Infrastructure.IDbAsyncEnumerable{``0},System.Func{``0,System.Boolean},System.Threading.CancellationToken)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="predicate">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -3900,6 +3903,7 @@
   </member>
   <member name="M:System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.FirstOrDefaultAsync``1(System.Data.Entity.Infrastructure.IDbAsyncEnumerable{``0},System.Threading.CancellationToken)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="source">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -4008,12 +4012,14 @@
   </member>
   <member name="M:System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.SingleOrDefaultAsync``1(System.Data.Entity.Infrastructure.IDbAsyncEnumerable{``0})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="source">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.SingleOrDefaultAsync``1(System.Data.Entity.Infrastructure.IDbAsyncEnumerable{``0},System.Func{``0,System.Boolean})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="predicate">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -4023,6 +4029,7 @@
   </member>
   <member name="M:System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.SingleOrDefaultAsync``1(System.Data.Entity.Infrastructure.IDbAsyncEnumerable{``0},System.Func{``0,System.Boolean},System.Threading.CancellationToken)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="predicate">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -4032,6 +4039,7 @@
   </member>
   <member name="M:System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.SingleOrDefaultAsync``1(System.Data.Entity.Infrastructure.IDbAsyncEnumerable{``0},System.Threading.CancellationToken)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="source">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -6509,12 +6517,14 @@
   </member>
   <member name="M:System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync``1(System.Linq.IQueryable{``0})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="source">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="predicate">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -6524,6 +6534,7 @@
   </member>
   <member name="M:System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Threading.CancellationToken)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="predicate">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -6533,6 +6544,7 @@
   </member>
   <member name="M:System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync``1(System.Linq.IQueryable{``0},System.Threading.CancellationToken)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="source">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -6739,12 +6751,14 @@
   </member>
   <member name="M:System.Data.Entity.QueryableExtensions.SingleOrDefaultAsync``1(System.Linq.IQueryable{``0})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="source">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="M:System.Data.Entity.QueryableExtensions.SingleOrDefaultAsync``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="predicate">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -6754,6 +6768,7 @@
   </member>
   <member name="M:System.Data.Entity.QueryableExtensions.SingleOrDefaultAsync``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Threading.CancellationToken)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="predicate">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -6763,6 +6778,7 @@
   </member>
   <member name="M:System.Data.Entity.QueryableExtensions.SingleOrDefaultAsync``1(System.Linq.IQueryable{``0},System.Threading.CancellationToken)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.ItemCanBeNullAttribute.#ctor" />
     <parameter name="source">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
