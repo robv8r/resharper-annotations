@@ -90,3 +90,9 @@ The following classes, properties, and methods are either partially implemented 
 		* P:System.ServiceModel.OperationContext.IncomingMessageProperties
 		* P:System.ServiceModel.ServiceHostBase.ChannelDispatchers
 		* P:System.ServiceModel.ServiceHostBase.Description
+
+## Contributing
+
+The annotations provided by this plugin are installed into AppData\Local\JetBrains\Installations\ReSharperPlatformVsXX\Extensions\Community.External.Annotations.R90\annotations.
+
+Modifications to these external annotation files can be tested by editing the files in that directory and then restarting Visual Studio.
