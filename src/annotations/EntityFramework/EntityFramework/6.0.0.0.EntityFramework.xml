@@ -3592,6 +3592,7 @@
   </member>
   <member name="M:System.Data.Entity.Infrastructure.DbQuery.Include(System.String)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PureAttribute.#ctor" />
     <parameter name="path">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -3607,6 +3608,7 @@
   </member>
   <member name="M:System.Data.Entity.Infrastructure.DbQuery`1.Include(System.String)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PureAttribute.#ctor" />
     <parameter name="path">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -6587,6 +6589,7 @@
   </member>
   <member name="M:System.Data.Entity.QueryableExtensions.Include(System.Linq.IQueryable,System.String)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PureAttribute.#ctor" />
     <parameter name="path">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -6596,6 +6599,7 @@
   </member>
   <member name="M:System.Data.Entity.QueryableExtensions.Include``1(System.Linq.IQueryable{``0},System.String)">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PureAttribute.#ctor" />
     <parameter name="path">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -6605,6 +6609,7 @@
   </member>
   <member name="M:System.Data.Entity.QueryableExtensions.Include``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    <attribute ctor="M:JetBrains.Annotations.PureAttribute.#ctor" />
     <parameter name="path">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
