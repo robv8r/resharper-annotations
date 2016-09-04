@@ -110,3 +110,9 @@ The following classes, properties, and methods are either partially implemented 
 		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation (all overloads)
 		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogTrace (all overloads)
 		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning (all overloads)(Microsoft.Extensions.Logging.ILogger,System.String,System.Object[])
+
+## Contributing
+
+The annotations provided by this plugin are installed into AppData\Local\JetBrains\Installations\ReSharperPlatformVsXX\Extensions\Community.External.Annotations.R90\annotations.
+
+Modifications to these external annotation files can be tested by editing the files in that directory and then restarting Visual Studio.
