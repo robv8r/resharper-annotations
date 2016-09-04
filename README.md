@@ -58,8 +58,18 @@ The following classes, properties, and methods are either partially implemented 
 		* T:System.Data.Common.DbCommand (includes async members)
 		* T:System.Data.Common.DbDataReader (includes async members)
 		* T:System.Data.SqlClient.SqlCommand (includes async members)
+		* M:System.Data.SqlClient.SqlParameterCollection.Add (all overloads)
 		* M:System.Data.SqlClient.SqlParameterCollection.AddWithValue(System.String, System.Object)
 		* P:System.Data.DataTable.Rows
+* System.Net.Http
+	* Version 4.0.0.0
+		* M:System.Net.Http.HttpContent.CopyToAsync (all overloads)
+		* M:System.Net.Http.HttpContent.CreateContentReadStreamAsync
+		* M:System.Net.Http.HttpContent.LoadIntoBufferAsync
+		* M:System.Net.Http.HttpContent.ReadAsByteArrayAsync
+		* M:System.Net.Http.HttpContent.ReadAsStreamAsync
+		* M:System.Net.Http.HttpContent.ReadAsStringAsync
+		* M:System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
 * System.Runtime.Serialization
 	* Version 4.0.0.0
 		* P:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
