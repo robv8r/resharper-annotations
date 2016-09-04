@@ -100,3 +100,25 @@ The following classes, properties, and methods are either partially implemented 
 		* P:System.ServiceModel.OperationContext.IncomingMessageProperties
 		* P:System.ServiceModel.ServiceHostBase.ChannelDispatchers
 		* P:System.ServiceModel.ServiceHostBase.Description
+* Microsoft.Extensions.Logging.Abstractions
+	* Version 1.0.0.0
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.Exception,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug(Microsoft.Extensions.Logging.ILogger,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogTrace(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.Exception,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogTrace(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogTrace(Microsoft.Extensions.Logging.ILogger,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.Exception,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(Microsoft.Extensions.Logging.ILogger,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.Exception,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning(Microsoft.Extensions.Logging.ILogger,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.Exception,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogError(Microsoft.Extensions.Logging.ILogger,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogCritical(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.Exception,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogCritical(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.EventId,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.LogCritical(Microsoft.Extensions.Logging.ILogger,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.LoggerExtensions.BeginScope(Microsoft.Extensions.Logging.ILogger,System.String,System.Object[])
+		* M:Microsoft.Extensions.Logging.Internal.FormattedLogValues.#ctor(System.String,System.Object[])
