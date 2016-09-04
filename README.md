@@ -35,6 +35,7 @@ The goal of this project is to augment the official ReSharper.ExternalAnnotation
 * EntityFramework 6.0.0.0 (Partially annotated, includes 6.x)
 * IBM.Data.DB2.iSeries 12.0.0.0 (Partially annotated)
 * System.Web.Http 5.2.3.0 (Partially annotated)
+* Prism 5.0 (Partially annotated)
 
 ##Annotated .Net Framework Classes
 
