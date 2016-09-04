@@ -1,3 +1,4 @@
+![logo](logo.png)
 #Community Resharper External Annotations
 
 The Community ReSharper External Annotations Project is an open source project for ReSharper External Annotations.  It is meant to augment the [official ReSharper External Annotations extension](https://resharper-plugins.jetbrains.com/packages/ReSharper.ExternalAnnotations/ "ReSharper.ExternalAnnotation extension").
