@@ -146,6 +146,9 @@
   <member name="M:Microsoft.Practices.Prism.Modularity.IConfigurationStore.RetrieveModuleConfigurationSection">
     <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
   </member>
+  <member name="M:Microsoft.Practices.Prism.Modularity.IModule">
+    <attribute ctor="M:JetBrains.Annotations.PublicAPI.#ctor" />
+  </member>
   <member name="M:Microsoft.Practices.Prism.Modularity.IModuleCatalog.CompleteListWithDependencies(System.Collections.Generic.IEnumerable{Microsoft.Practices.Prism.Modularity.ModuleInfo})">
     <parameter name="modules">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />

@@ -3,7 +3,7 @@
   
   <PropertyGroup>
     <OutputDirectory>bin</OutputDirectory>
-    <Version>1.2.3.0</Version>
+    <Version>1.2.4-beta1</Version>
   </PropertyGroup>
   
   <ItemGroup>

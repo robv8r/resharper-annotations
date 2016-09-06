@@ -1432,11 +1432,6 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:JetBrains.Annotations.PathReferenceAttribute.#ctor(System.String)">
-    <parameter name="basePath">
-      <attribute ctor="M:JetBrains.Annotations.PathReferenceAttribute.#ctor" />
-    </parameter>
-  </member>
   <member name="P:FluentValidation.AssemblyScanner.AssemblyScanResult.InterfaceType">
     <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
   </member>

@@ -1,8 +1,0 @@
-<assembly name="Prism.UnityExtensions.Desktop">
-  <member name="M:Microsoft.Practices.Prism.UnityExtensions.UnityContainerHelper.TryResolve``1(Microsoft.Practices.Unity.IUnityContainer)">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-  <member name="M:Microsoft.Practices.Prism.UnityExtensions.UnityContainerHelper.TryResolve(Microsoft.Practices.Unity.IUnityContainer,System.Type)">
-    <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
-  </member>
-</assembly>
